@@ -310,42 +310,61 @@ console.log(square(5)); // Uses cache (faster)
 <span style="color:green;">============================================================================================================= </span>
 
 
-<h3 id="what_is_debouncing" >Debouncing (in JavaScript)</h3>
+<h3 id="what_is_debouncing"> ⭐ What is Debouncing in JavaScript?</h3>
 
-
-**Definition:**
-Debouncing is a technique used to **limit how often a function is executed**.
-It ensures that a function runs **only after a certain amount of time has passed since the last time it was called**.
-
-**Purpose:**
-Useful for events that fire very frequently (like `keyup`, `resize`, or `scroll`) — to avoid performance issues.
-
-**Example:**
-
-```js
-function debounce(func, delay) {
-  let timer;
-  return function (...args) {
-    clearTimeout(timer);
-    timer = setTimeout(() => func.apply(this, args), delay);
-  };
-}
-
-// Usage example:
-window.addEventListener(
-  "resize",
-  debounce(() => {
-    console.log("Resized after user stopped resizing");
-  }, 500)
-);
-```
-
-✅ **How it works:**
-
-- Every time the event triggers, the timer resets.
-- The function (`func`) only executes after the event **stops firing for `delay` milliseconds**.
+**Debouncing means:
+A function will run only after the user stops doing something for some time.**
 
 ---
+
+## ⭐ Example
+
+If a user is typing in a search box:
+
+* They type "g" → wait
+* They type "go" → wait
+* They type "gop" → wait
+* They stop typing → **now run the function**
+
+So the function runs **only once** after typing stops.
+
+---
+
+## ⭐ Why we use debouncing?
+
+* To avoid calling API many times
+* To reduce unnecessary work
+* To make the website faster
+
+---
+
+## ⭐ Very Simple Code Example
+
+```javascript
+function debounce(func, delay) {
+  let timer;
+
+  return function () {
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      func();
+    }, delay);
+  };
+}
+```
+
+Usage:
+
+```javascript
+const search = debounce(() => {
+  console.log("Search API call");
+}, 500);
+```
+
+If user types fast, the function runs **only after 500ms** of no typing.
+
+
 
 <span style="color:green;">============================================================================================================= </span>
 
@@ -353,50 +372,56 @@ window.addEventListener(
 <h3 id="what_is_throttling" >Throttling (in JavaScript)</h3>
 
 
-**Definition:**
-Throttling ensures that a function is executed **at most once every specified period**, no matter how many times the event fires.
+**Throttling means:
+A function will run only one time in a fixed time gap.
+Even if you call it many times.**
 
-**Purpose:**
-Useful for continuously firing events (like `scroll` or `mousemove`) where you need **regular updates**, but not too often.
+---
 
-**Example:**
+## ⭐ Example
 
-```js
-function throttle(func, limit) {
-  let inThrottle;
-  return function (...args) {
-    if (!inThrottle) {
-      func.apply(this, args);
-      inThrottle = true;
-      setTimeout(() => (inThrottle = false), limit);
+You scroll a page → browser gives many scroll events (maybe 100 times in 1 second).
+But with throttling, your function runs **only once every 300ms**.
+
+---
+
+## ⭐ Why we use throttling?
+
+* To stop a function from running too many times
+* To make website fast
+* To reduce load on browser or API
+
+---
+
+## ⭐ Very Simple Example Code
+
+```javascript
+function throttle(func, delay) {
+  let run = true;
+
+  return function () {
+    if (run) {
+      func();
+      run = false;
+
+      setTimeout(() => {
+        run = true;
+      }, delay);
     }
   };
 }
-
-// Usage example:
-window.addEventListener(
-  "scroll",
-  throttle(() => {
-    console.log("Scroll event fired at most once every 300ms");
-  }, 300)
-);
 ```
 
-✅ **How it works:**
+Usage:
 
-- The function runs immediately, then ignores further calls until the `limit` time passes.
-- After that, it becomes ready to run again.
+```javascript
+window.addEventListener("scroll", throttle(() => {
+  console.log("Scrolling...");
+}, 500));
+```
 
----
+Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
-### 🔍 **In Short:**
-
-| Concept      | When function runs                                 | Common use cases                        |
-| ------------ | -------------------------------------------------- | --------------------------------------- |
-| **Debounce** | After the user stops triggering events for a delay | `search input`, `window resize`         |
-| **Throttle** | At regular intervals during continuous events      | `scroll`, `mousemove`, `resize` updates |
-
----
 
 <span style="color:green;">============================================================================================================= </span>
 
