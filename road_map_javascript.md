@@ -1,14 +1,4 @@
-<a href="#top" id="backToTop" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #007bff;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-">⬆ Top</a>
+<a href="#top" id="backToTop" style=" position: fixed; bottom: 20px; right: 20px; background: #007bff; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; font-size: 14px;">Top</a>
 
 <script>
 document.querySelector('#backToTop').addEventListener('click', function(e) {
@@ -20,20 +10,13 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 </script>
 
 
-# 🌟 **1. Introduction to JavaScript**
+### 🌟 **1. Introduction to JavaScript**
 
-### **Questions**
+* [What are JavaScript versions like ES5, ES6, ESNext?](#versions)
 
-* What is JavaScript and where is it used?
-* How did JavaScript evolve (brief history)?
-* What are JavaScript versions like ES5, ES6, ESNext?
-* How can you run JavaScript in browser vs Node.js?
 
----
+### 🌟 **2. Variables**
 
-# 🌟 **2. Variables**
-
-### **Questions**
 
 * What is the difference between `var`, `let`, and `const`?
 * What is hoisting? How does it affect variable declarations?
@@ -43,9 +26,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **3. Data Types**
+### 🌟 **3. Data Types**
 
-### **Questions**
 
 * What are the primitive data types in JS?
 * Difference between `null` vs `undefined`?
@@ -57,9 +39,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **4. Objects & Prototypes**
+### 🌟 **4. Objects & Prototypes**
 
-### **Questions**
 
 * What is an object in JavaScript?
 * What is prototypal inheritance?
@@ -70,9 +51,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **5. Data Structures (from PDF)**
+### 🌟 **5. Data Structures (from PDF)**
 
-### **Questions**
 
 * What are Maps? When should we use them vs objects?
 * What is the difference between Map vs WeakMap?
@@ -82,9 +62,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **6. Equality & Comparison**
+### 🌟 **6. Equality & Comparison**
 
-### **Questions**
 
 * Difference between `==` and `===`?
 * What is `Object.is()` and when is it used?
@@ -93,9 +72,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **7. Loops & Iterations**
+### 🌟 **7. Loops & Iterations**
 
-### **Questions**
 
 * Difference between `for`, `while`, and `do…while` loops?
 * When should you use `for...in` vs `for...of`?
@@ -104,9 +82,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **8. Control Flow**
+### 🌟 **8. Control Flow**
 
-### **Questions**
 
 * How do `if`, `else`, and `switch` work?
 * What is the purpose of `throw`?
@@ -115,9 +92,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **9. Expressions & Operators**
+### 🌟 **9. Expressions & Operators**
 
-### **Questions**
 
 * What are arithmetic, logical, and comparison operators?
 * What is the difference between `===` and `Object.is`?
@@ -127,9 +103,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **10. Functions**
+### 🌟 **10. Functions**
 
-### **Questions**
 
 * What are the different ways to declare a function in JS?
 * What is an arrow function and how does it differ from regular functions?
@@ -142,9 +117,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **11. `this` Keyword**
+### 🌟 **11. `this` Keyword**
 
-### **Questions**
 
 * How does `this` behave in:
 
@@ -158,9 +132,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **12. Asynchronous JavaScript**
+### 🌟 **12. Asynchronous JavaScript**
 
-### **Questions**
 
 * What is the event loop?
 * What is the call stack and task queue?
@@ -174,7 +147,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
-# 🌟 **13. Advanced Topics from PDF**
+### 🌟 **13. Advanced Topics from PDF**
 
 ### **Classes**
 
