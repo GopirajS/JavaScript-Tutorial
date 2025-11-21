@@ -19,11 +19,12 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 });
 </script>
 
+
 # **🔥 Most Important JavaScript Interview Questions**
 
 ---
 
-## \*\*1. JavaScript Basics
+## 1. JavaScript Basics
 
 - [What is JavaScript?](#what_is_javascript)
 
@@ -55,9 +56,13 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is the difference between mutable and immutable data?](#what_is_the_difference_between_mutable_and_immutable_data)
 
+- [What is scope in JavaScript?](#what_is_scope_in_javascript)
+
 ---
 
-## \*\*2. Functions & Execution
+## 2. Functions & Execution
+
+- [Types of the Functions](#types_of_the_functions)
 
 - [What is an arrow function?](#what_is_an_arrow_function)
 
@@ -93,7 +98,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What are microtasks and macrotasks?](#what_are_microtasks_and_macrotasks)
 
-## \*\*3. Objects, Arrays, and Prototype
+## 3. Objects, Arrays, and Prototype
 
 - [What are objects in JavaScript?](#what_are_objects_in_javascript)
 
@@ -131,7 +136,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is array flattening?](#what_is_array_flattening)
 
-## **4. DOM & Browser (15 Questions)**
+## 4. DOM & Browser (15 Questions)**
 
 - [What is the DOM?](#what_is_the_dom)
 
@@ -159,7 +164,10 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is `dataset` in HTML?](#what_is_dataset_in_html)
 
-## **5. Asynchronous JavaScript**
+-. [What is scope in JavaScript?](#what_is_scope_in_javascript)
+
+
+## 5. Asynchronous JavaScript**
 
 - [What is AJAX?](#what_is_ajax)
 
@@ -379,6 +387,9 @@ let b = 20;
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_hoisting">What is hoisting?</h3>
+
+![Hoisting](https://media.geeksforgeeks.org/wp-content/uploads/20250726100849187796/hoisting_in_javascript_2.webp)
+
 
 **Hoisting** is JavaScript’s behavior of **moving variable and function declarations to the top of their scope** _before the code executes_.
 
@@ -1176,7 +1187,75 @@ user.name = "Peter"; // ✔ modifies the same object
 
 <span style="color:green;">================================================================ </span>
 
+
+<h3 id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h3>
+
+![scope](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*KxHwVbB0zhnSVrhrWtT-gg.jpeg)
+
+**Scope** in JavaScript means **where variables and functions are accessible** in your code.
+
+In other words — it decides **which parts of the program can see or use a variable**.
+
+
+### 📘 **Types of Scope in JavaScript:**
+
+1. 🧱 **Global Scope**
+
+   * Variables declared **outside any function or block**
+   * Can be used **anywhere** in the code
+
+   ```js
+   let name = "John"; // global
+   function sayName() {
+     console.log(name); // can access
+   }
+   sayName(); // John
+   ```
+
+2. ⚙️ **Function Scope**
+
+   * Variables declared **inside a function**
+   * Can be used **only inside that function**
+
+   ```js
+   function greet() {
+     let message = "Hello!";
+     console.log(message);
+   }
+   greet();
+   // console.log(message); ❌ Error — not accessible outside
+   ```
+
+3. 📦 **Block Scope** (`let` and `const`)
+
+   * Variables declared inside `{ }`
+   * Can be used **only inside that block**
+
+   ```js
+   {
+     let age = 25;
+     console.log(age); // works
+   }
+   // console.log(age); ❌ Error
+   ```
+
+---
+
+### 🧠 **In short:**
+
+> **Scope** defines **where a variable can be accessed or used** in your program.
+>
+> * `var` → function scope
+> * `let` & `const` → block scope
+> * outside everything → global scope
+
+
+<span style="color:green;">================================================================ </span>
+
  <h3 id="what_is_an_arrow_function">  What is an arrow function? <h3>
+
+![Arrow function](https://www.devopsconsulting.in/blog/wp-content/uploads/2023/05/image-17.png)
+
 
 **Answer:**
 **Arrow functions** are a **shorter way** to write functions in JavaScript.
@@ -1426,7 +1505,8 @@ If you want, I can give real interview trick questions about `this`.
 
 <h3 id="what_is_a_closure">What is a closure?</h3>
 
-## **27. What is a closure?**
+![Closure](https://almablog-media.s3.ap-south-1.amazonaws.com/Frame_857_c7ba5df984.png)
+
 
 A **closure** is a feature in JavaScript where an **inner function remembers and can access variables from its outer function**, even after the outer function has finished executing.
 
