@@ -2384,6 +2384,8 @@ Currying breaks a multi-argument function into a chain of single-argument functi
 
 <h3 id="what_is_memoization">What is memoization?</h3>
 
+![Image](https://github.com/user-attachments/assets/f277bf84-bc32-4ef9-80d7-1ec67be95e99)
+
 **Memoization** is an optimization technique where a function **stores the results** of expensive calculations and **reuses** them when the same inputs occur again.
 
 In simple words:
@@ -2531,6 +2533,8 @@ If you want, I can show real-world use cases (event handlers, borrowing methods,
 
 <h3 id="what_is_debouncing">What is debouncing?</h3>
 
+<img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" />
+
 **Debouncing means:
 A function will run only after the user stops doing something for some time.**
 
@@ -2586,6 +2590,9 @@ If user types fast, the function runs **only after 500ms** of no typing.
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_throttling">What is throttling?</h3>
+
+<img alt="Image" src="https://github.com/user-attachments/assets/a6271ad2-9182-4e06-9943-5ce4cdda665b" />
+
 
 **Throttling means:
 A function will run only one time in a fixed time gap.
@@ -2644,8 +2651,13 @@ Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
 <h3 id="what_is_the_event_loop">What is the event loop?</h3>
 
-![event loop](https://cdn.hashnode.com/res/hashnode/image/upload/v1621363914720/I1YX1khuN.gif?w=1600&h=840&fit=crop&crop=entropy&auto=format,compress&gif-q=60&format=webm)
 
+![Image](https://github.com/user-attachments/assets/8ffcfb6a-fcb8-48d8-9c14-3baf8b3ae8b5)
+![Image](https://github.com/user-attachments/assets/dbebb8e4-6e0d-40ad-a158-6e8027cb87ff)
+![Image](https://github.com/user-attachments/assets/1d33af80-c14c-4e1a-8c40-3fdf6f7c6e15)
+![Image](https://github.com/user-attachments/assets/0c26e27a-94ac-4def-80f8-886cfec09d2f)
+![Image](https://github.com/user-attachments/assets/108787cf-fb80-4261-9e34-d360e830d309)
+![Image](https://github.com/user-attachments/assets/e374f5f7-fab8-40b7-b5c8-5c6f078520f6)
 
 The **event loop** is the mechanism that allows JavaScript (which is single-threaded) to handle **asynchronous** operations without blocking the main thread.
 
@@ -2734,6 +2746,9 @@ Ready for the next one!
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_the_call_stack">What is the call stack?</h3>
+
+![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
+
 
 The **call stack** is a data structure used by JavaScript to keep track of **which function is currently running** and **what function to return to next**.
 
@@ -3158,6 +3173,8 @@ console.log(obj["first name"]); // valid
 
 <h3 id="what_is_prototypal_inheritance" >What is prototypal inheritance? <h3>
 
+<img  alt="Image" src="https://github.com/user-attachments/assets/36d69dfd-eb45-4109-aa36-0bbab624fd0b" />
+
 **Prototypal inheritance** is JavaScript’s system where **objects can inherit properties and methods from other objects** through a hidden internal link called `[[Prototype]]`.
 
 In simple words:
@@ -3208,9 +3225,17 @@ JavaScript walks upward until it finds the property or reaches `null`.
 
 ---
 
-## **Summary**
+
+## 🌟 Simple summary
+
+* Objects can have a **parent** called a **prototype**
+* If an object doesn’t know something, it asks its parent
+* This avoids copying everything
+* It creates a **chain** of shared abilities
 
 Prototypal inheritance allows objects to inherit properties from other objects through a prototype chain, making JavaScript flexible and efficient.
+
+
 
 <span style="color:green;">================================================================ </span>
 
@@ -3276,9 +3301,27 @@ null
 
 ---
 
-## **Summary**
+## ⭐ Simple summary
+
+This is **the prototype chain**:
+
+1. Ask the child object
+2. If it doesn’t know → ask the parent (prototype)
+3. If the parent doesn’t know → ask the parent’s parent
+4. Keep going until someone knows
+5. Or until the chain ends
+
+
+* A **prototype chain** is like a **line of parents**
+* If an object doesn't have something, JavaScript climbs up the chain
+* It stops when it finds the property or reaches the end (`null`)
+
+---
+
 
 The prototype chain is the path JavaScript follows to find properties by checking the object and then climbing up through its prototypes until it reaches `null`.
+
+
 
 <span style="color:green;">================================================================ </span>
 
