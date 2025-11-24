@@ -92,8 +92,6 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is throttling?](#what_is_throttling)
 
-- [What is the event loop?](#what_is_the_event_loop)
-
 - [What is the call stack?](#what_is_the_call_stack)
 
 - [What are microtasks and macrotasks?](#what_are_microtasks_and_macrotasks)
@@ -164,8 +162,6 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is `dataset` in HTML?](#what_is_dataset_in_html)
 
--. [What is scope in JavaScript?](#what_is_scope_in_javascript)
-
 
 ## 5. Asynchronous JavaScript**
 
@@ -181,7 +177,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is the fetch API?](#what_is_the_fetch_api)
 
-- [What is the event loop and how does it work?](#what_is_the_event_loop_and_how_does_it_work)
+- [What is the event loop?](#what_is_the_event_loop)
 
 - [What are setTimeout and setInterval?](#what_are_settimeout_and_setinterval)
 
@@ -202,10 +198,6 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 -  [What are template literals?](#what_are_template_literals)
 
--  [What is destructuring?](#what_is_destructuring)
-
--  [What are default parameters?](#what_are_default_parameters)
-
 -  [What is a `Set`?](#what_is_a_set)
 
 -  [What is a `Map`?](#what_is_a_map)
@@ -213,10 +205,6 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 -  [What is a WeakMap?](#what_is_a_weakmap)
 
 -  [What is a WeakSet?](#what_is_a_weakset)
-
--  [What is the rest operator?](#what_is_the_rest_operator)
-
--  [What is the spread operator?](#what_is_the_spread_operator)
 
 -  [What are modules in JavaScript?](#what_are_modules_in_javascript)
 
@@ -2649,176 +2637,6 @@ Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_the_event_loop">What is the event loop?</h3>
-
-
-![Image](https://github.com/user-attachments/assets/8ffcfb6a-fcb8-48d8-9c14-3baf8b3ae8b5)
-![Image](https://github.com/user-attachments/assets/dbebb8e4-6e0d-40ad-a158-6e8027cb87ff)
-![Image](https://github.com/user-attachments/assets/1d33af80-c14c-4e1a-8c40-3fdf6f7c6e15)
-![Image](https://github.com/user-attachments/assets/0c26e27a-94ac-4def-80f8-886cfec09d2f)
-![Image](https://github.com/user-attachments/assets/108787cf-fb80-4261-9e34-d360e830d309)
-![Image](https://github.com/user-attachments/assets/e374f5f7-fab8-40b7-b5c8-5c6f078520f6)
-
-The **event loop** is the mechanism that allows JavaScript (which is single-threaded) to handle **asynchronous** operations without blocking the main thread.
-
-It continuously checks:
-
-1. **Call stack** (what is currently running)
-2. **Callback/task queues** (what should run next)
-3. Moves tasks from the queues → stack when the stack is empty
-
-This makes JavaScript appear fast and non-blocking.
-
----
-
-## ✔ Simple explanation
-
-JavaScript can do one thing at a time (single-threaded).
-But async tasks like **setTimeout**, **Promises**, and **fetch** run in the background (browser/web APIs).
-When they're done, the event loop pushes their callbacks back into the call stack **when it's free**.
-
----
-
-## ✔ Diagram (simple)
-
-```
-Call Stack  ←----------- push callbacks -----------  Task Queue
-       ↑                                             (micro + macro)
-       |                                                    ↑
-       -------------- Event Loop ---------------------------
-```
-
----
-
-## ✔ Example
-
-```js
-console.log("Start");
-
-setTimeout(() => {
-  console.log("Inside timeout");
-}, 0);
-
-console.log("End");
-```
-
-### Output:
-
-```
-Start
-End
-Inside timeout
-```
-
-Even with `0 ms`, the timeout runs later because the event loop waits for the call stack to empty.
-
----
-
-## ✔ Microtasks vs Macrotasks
-
-- **Microtasks (higher priority)**
-
-  - Promises (`.then`)
-  - MutationObserver
-  - queueMicrotask()
-
-- **Macrotasks**
-
-  - setTimeout
-  - setInterval
-  - DOM events
-  - setImmediate (Node)
-
-Event loop first clears **microtasks**, then **macrotasks**.
-
----
-
-## **Summary**
-
-The event loop:
-
-- Checks if the call stack is empty
-- Moves callbacks from queues into the stack
-- Allows JavaScript to run asynchronous code efficiently
-
-Ready for the next one!
-
-<span style="color:green;">================================================================ </span>
-
-<h3 id="what_is_the_call_stack">What is the call stack?</h3>
-
-![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
-
-
-The **call stack** is a data structure used by JavaScript to keep track of **which function is currently running** and **what function to return to next**.
-
-It works in a **LIFO** (Last In, First Out) order.
-
----
-
-## ✅ How the call stack works
-
-- When a function is **called**, it is **pushed** onto the stack.
-- When the function **finishes**, it is **popped** off the stack.
-- JavaScript can run **only one function at a time** because it has a single call stack → single-threaded.
-
----
-
-## ✔ Example
-
-```js
-function a() {
-  b();
-}
-
-function b() {
-  console.log("Hello");
-}
-
-a();
-```
-
-### Call stack steps:
-
-1. `a()` pushed
-2. inside `a()`, call `b()` → `b()` pushed
-3. `b()` prints → popped
-4. `a()` finishes → popped
-
-Stack becomes empty again.
-
----
-
-## ✔ Visual representation
-
-```
-| b() |
-| a() |
--------
-(call stack)
-```
-
-After finishing:
-
-```
-(empty)
-```
-
----
-
-## ✔ Key points
-
-- Single-threaded → one function at a time
-- Functions are pushed/popped as they run
-- If a function never ends → **stack overflow**
-- Works together with **event loop** for async tasks
-
----
-
-## **Summary**
-
-The call stack is the part of the JavaScript engine that tracks function execution in a last-in-first-out order.
-
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h3>
@@ -3241,6 +3059,8 @@ Prototypal inheritance allows objects to inherit properties from other objects t
 
 <h3 id="what_is_the_prototype_chain" >What is the prototype chain? <h3>
 
+<img  alt="Image" src="https://github.com/user-attachments/assets/7dce80f9-5fd5-46f1-b065-b44e53cc5240" />
+
 The **prototype chain** is the mechanism JavaScript uses to **look up properties and methods** when they are not found on the current object.
 
 When you access a property:
@@ -3627,6 +3447,8 @@ console.log(obj); // { a: 100 }
 
 <h3 id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? <h3>
 
+![Image](https://github.com/user-attachments/assets/e5defe2d-f946-4d3c-87e9-7729c428d569)
+
 ### **1. Shallow Copy**
 
 A **shallow copy** copies only the **top-level properties**.
@@ -3785,79 +3607,11 @@ function deepClone(obj) {
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_destructuring" >What is destructuring? <h3>
-
-**Destructuring assignment** is a feature in JavaScript that lets you **unpack (extract) values** from **arrays or objects** into separate variables easily.
-
-It makes code **shorter and easier to read**.
-
----
-
-### 📘 **1. Array Destructuring**
-
-You can extract values from an array:
-
-```js
-const colors = ["red", "green", "blue"];
-
-const [first, second, third] = colors;
-
-console.log(first); // red
-console.log(second); // green
-console.log(third); // blue
-```
-
-You can also skip values:
-
-```js
-const [a, , c] = [1, 2, 3];
-console.log(a, c); // 1 3
-```
-
----
-
-### 📦 **2. Object Destructuring**
-
-You can extract properties from an object:
-
-```js
-const person = { name: "John", age: 25, city: "New York" };
-
-const { name, age } = person;
-
-console.log(name); // John
-console.log(age); // 25
-```
-
-You can also rename variables:
-
-```js
-const { name: userName, city: userCity } = person;
-console.log(userName); // John
-console.log(userCity); // New York
-```
-
----
-
-### ⚙️ **3. Default Values**
-
-You can set default values when the property doesn’t exist:
-
-```js
-const { country = "USA" } = person;
-console.log(country); // USA
-```
-
----
-
-### 🎯 **In short:**
-
-> **Destructuring** lets you **quickly extract values** from arrays or objects
-> and store them in variables — making your code cleaner and shorter.
-
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_are_spread_and_rest_operators_in_javascript" >What are Spread and Rest Operators in JavaScript? <h3>
+
+<img  alt="Image" src="https://github.com/user-attachments/assets/429a865f-d9d3-49ca-8669-1c6d77511ff2" />
 
 Both the **spread (`...`)** and **rest (`...`)** operators use **three dots**,
 but they work in **opposite ways** depending on where they’re used.
@@ -4264,10 +4018,6 @@ users.sort((a, b) => {
 - Multiple fields → check one, then fallback to another.
 
 <span style="color:green;">================================================================ </span>
-
-Here’s the answer **clean, simple, and interview-ready**:
-
----
 
 # ✅ What is array flattening?
 
@@ -4801,7 +4551,9 @@ If you want, I can show:
 
 <span style="color:green;">================================================================ </span>
 
-  <h3 id="what_is_event_bubbling">  What is event bubbling? </h3>simple, and interview-ready**:
+  <h3 id="what_is_event_bubbling">  What is event bubbling? </h3>
+
+  <img  alt="Image" src="https://github.com/user-attachments/assets/97f07e09-e1a0-4342-962a-08551c3c344f" />
 
 **Event bubbling means that when an event happens on an element, it first runs on that element and then moves upward through all its parent elements.**
 
@@ -4868,7 +4620,9 @@ event.stopPropagation();
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_event_capturing">  What is event capturing? </h3>nterview-ready** explanation:
+<h3 id="what_is_event_capturing">  What is event capturing? </h3>
+
+<img  alt="Image" src="https://github.com/user-attachments/assets/97f07e09-e1a0-4342-962a-08551c3c344f" />
 
 **Event capturing** is the opposite of bubbling.
 In capturing, the event starts at the **top parent** and moves **downward** to the target element.
@@ -5533,64 +5287,175 @@ fetch("https://example.com/api", {
 
 <span style="color:green;">================================================================ </span>
 
- <h3 id="what_is_the_event_loop_and_how_does_it_work"> What is the event loop and how does it work?</h3>
+<h3 id="what_is_the_event_loop">What is the event loop?</h3>
 
-The **Event Loop** is the **mechanism** in JavaScript that **handles asynchronous operations** (like `setTimeout`, promises, or API calls)
-and ensures the code runs in the **right order** — even though JavaScript runs on **a single thread**.
+
+![Image](https://github.com/user-attachments/assets/8ffcfb6a-fcb8-48d8-9c14-3baf8b3ae8b5)
+![Image](https://github.com/user-attachments/assets/dbebb8e4-6e0d-40ad-a158-6e8027cb87ff)
+![Image](https://github.com/user-attachments/assets/1d33af80-c14c-4e1a-8c40-3fdf6f7c6e15)
+![Image](https://github.com/user-attachments/assets/0c26e27a-94ac-4def-80f8-886cfec09d2f)
+![Image](https://github.com/user-attachments/assets/108787cf-fb80-4261-9e34-d360e830d309)
+![Image](https://github.com/user-attachments/assets/e374f5f7-fab8-40b7-b5c8-5c6f078520f6)
+
+The **event loop** is the mechanism that allows JavaScript (which is single-threaded) to handle **asynchronous** operations without blocking the main thread.
+
+It continuously checks:
+
+1. **Call stack** (what is currently running)
+2. **Callback/task queues** (what should run next)
+3. Moves tasks from the queues → stack when the stack is empty
+
+This makes JavaScript appear fast and non-blocking.
 
 ---
 
-### ⚙️ **How It Works (Simple Version):**
+## ✔ Simple explanation
 
-1. 🧠 **Call Stack** — where JavaScript runs your main code (line by line).
-2. 📬 **Web APIs / Callback Queue** — where asynchronous tasks wait (like `setTimeout`, `fetch`, etc.).
-3. 🔁 **Event Loop** — keeps checking:
-
-   - “Is the call stack empty?”
-   - If yes, it **takes the next task** from the queue and **runs it**.
+JavaScript can do one thing at a time (single-threaded).
+But async tasks like **setTimeout**, **Promises**, and **fetch** run in the background (browser/web APIs).
+When they're done, the event loop pushes their callbacks back into the call stack **when it's free**.
 
 ---
 
-### 📘 **Example:**
+## ✔ Diagram (simple)
+
+```
+Call Stack  ←----------- push callbacks -----------  Task Queue
+       ↑                                             (micro + macro)
+       |                                                    ↑
+       -------------- Event Loop ---------------------------
+```
+
+---
+
+## ✔ Example
 
 ```js
 console.log("Start");
 
 setTimeout(() => {
-  console.log("Inside setTimeout");
-}, 2000);
+  console.log("Inside timeout");
+}, 0);
 
 console.log("End");
 ```
 
-🕒 **Output:**
+### Output:
 
 ```
 Start
 End
-Inside setTimeout
+Inside timeout
 ```
 
-✅ The event loop lets `setTimeout` run **after** 2 seconds
-— without blocking “End” from running.
+Even with `0 ms`, the timeout runs later because the event loop waits for the call stack to empty.
 
 ---
 
-### 🔄 **In short:**
+## ✔ Microtasks vs Macrotasks
 
-> The **Event Loop** constantly checks the **call stack** and **callback queue**,
-> making sure JavaScript can handle **asynchronous tasks** smoothly —
-> even though it runs **one thing at a time**.
+- **Microtasks (higher priority)**
+
+  - Promises (`.then`)
+  - MutationObserver
+  - queueMicrotask()
+
+- **Macrotasks**
+
+  - setTimeout
+  - setInterval
+  - DOM events
+  - setImmediate (Node)
+
+Event loop first clears **microtasks**, then **macrotasks**.
 
 ---
 
-### 🧠 **Easy analogy:**
+## **Summary**
 
-Think of JavaScript as a **chef** (single thread).
+The event loop:
 
-- The **call stack** is the chef’s counter (where they cook).
-- The **event loop** is the waiter who brings new orders when the chef is free.
-- The **callback queue** is the waiting line of dishes to cook next.
+- Checks if the call stack is empty
+- Moves callbacks from queues into the stack
+- Allows JavaScript to run asynchronous code efficiently
+
+Ready for the next one!
+
+<span style="color:green;">================================================================ </span>
+
+<h3 id="what_is_the_call_stack">What is the call stack?</h3>
+
+![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
+
+
+The **call stack** is a data structure used by JavaScript to keep track of **which function is currently running** and **what function to return to next**.
+
+It works in a **LIFO** (Last In, First Out) order.
+
+---
+
+## ✅ How the call stack works
+
+- When a function is **called**, it is **pushed** onto the stack.
+- When the function **finishes**, it is **popped** off the stack.
+- JavaScript can run **only one function at a time** because it has a single call stack → single-threaded.
+
+---
+
+## ✔ Example
+
+```js
+function a() {
+  b();
+}
+
+function b() {
+  console.log("Hello");
+}
+
+a();
+```
+
+### Call stack steps:
+
+1. `a()` pushed
+2. inside `a()`, call `b()` → `b()` pushed
+3. `b()` prints → popped
+4. `a()` finishes → popped
+
+Stack becomes empty again.
+
+---
+
+## ✔ Visual representation
+
+```
+| b() |
+| a() |
+-------
+(call stack)
+```
+
+After finishing:
+
+```
+(empty)
+```
+
+---
+
+## ✔ Key points
+
+- Single-threaded → one function at a time
+- Functions are pushed/popped as they run
+- If a function never ends → **stack overflow**
+- Works together with **event loop** for async tasks
+
+---
+
+## **Summary**
+
+The call stack is the part of the JavaScript engine that tracks function execution in a last-in-first-out order.
 
 <span style="color:green;">================================================================ </span>
 
@@ -5957,8 +5822,9 @@ longPoll();
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_are_template_literals">  What are template literals?  <h3>
+<span style="color:green;">================================================================ </span>
 
+<h3 id="what_are_template_literals">  What are template literals?  <h3>
 
 ![Template literal](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*OwdFaZ6A77pHTmwUpFKi0A.png)
 
@@ -6014,136 +5880,8 @@ console.log(`Total: ${a + b}`);
 
 **Template literals are strings written using backticks that allow variable interpolation, multiline strings, and embedded expressions using `${ }`.**
 
-
-
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_destructuring">  What is destructuring?  <h3>
-
-
-
-![destructuring](https://miro.medium.com/v2/resize:fit:720/format:webp/1*KJ-Mbii6TVxjdQHPCJHvCw.jpeg)
-
-
-**Destructuring** is a feature in JavaScript that allows you to **extract values from arrays or objects and assign them to variables in a clean, short syntax.**
-
-It makes your code shorter and easier to read.
-
----
-
-## ⭐ **1. Array Destructuring**
-
-```javascript
-const colors = ["red", "green", "blue"];
-
-const [first, second] = colors;
-
-console.log(first);  // red
-console.log(second); // green
-```
-
----
-
-## ⭐ **2. Object Destructuring**
-
-```javascript
-const user = {
-  name: "Alice",
-  age: 25,
-};
-
-const { name, age } = user;
-
-console.log(name); // Alice
-console.log(age);  // 25
-```
-
----
-
-## ⭐ **3. Renaming Variables during Destructuring**
-
-```javascript
-const { name: username } = user;
-
-console.log(username); // Alice
-```
-
----
-
-## ⭐ **4. Default Values**
-
-```javascript
-const { city = "Unknown" } = user;
-
-console.log(city); // Unknown
-```
-
----
-
-## ⭐ One-Line Interview Version
-
-**Destructuring is a shorthand way to extract values from arrays or objects into variables using a clean, structured syntax.**
-
-
-
-<span style="color:green;">================================================================ </span>
-
-<h3 id="what_are_default_parameters">  What are default parameters?  <h3>
-
-
-![Default Parameters]()
-
-**Default parameters** allow you to set a **default value** for a function’s argument **if no value is provided** or if the value is `undefined`.
-
-This prevents errors and avoids extra `if` checks inside functions.
-
----
-
-## ⭐ Example 1: Basic default parameter
-
-```javascript
-function greet(name = "Guest") {
-  console.log(`Hello, ${name}!`);
-}
-
-greet();            // Hello, Guest!
-greet("John");      // Hello, John!
-```
-
----
-
-## ⭐ Example 2: Default parameter with expressions
-
-```javascript
-function add(a, b = 10) {
-  return a + b;
-}
-
-console.log(add(5));    // 15
-console.log(add(5, 3)); // 8
-```
-
----
-
-## ⭐ Example 3: Default parameter with functions
-
-```javascript
-function log(value, fn = console.log) {
-  fn(value);
-}
-
-log("Hi"); // prints using console.log
-```
-
----
-
-## ⭐ One-line interview version
-
-**Default parameters let you assign a fallback value to function arguments when they are not provided or are undefined.**
-
-
-
-<span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_a_set">  What is a `Set`?  <h3>
 
@@ -6348,7 +6086,6 @@ user = null;
 **A WeakMap is a Map that only accepts object keys and automatically garbage-collects unused key objects, preventing memory leaks.**
 
 
-
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_a_weakset">  What is a WeakSet?  <h3>
@@ -6401,164 +6138,14 @@ obj1 = null; // remove reference
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_the_rest_operator">  What is the rest operator?  <h3>
-
-
-The **rest operator (`...`)** allows you to collect **the remaining values** of an array or object into a single variable.
-
-It is used in **function parameters**, **arrays**, and **objects** to gather leftover values.
-
-It looks like spread (`...`), but **rest collects** while **spread expands**.
-
----
-
-# ✅ **1. Rest operator in function parameters**
-
-Collects all remaining arguments into an array.
-
-```javascript
-function sum(...numbers) {
-  return numbers.reduce((a, b) => a + b);
-}
-
-console.log(sum(1, 2, 3, 4)); // 10
-```
-
-✔ `numbers` becomes: `[1, 2, 3, 4]`
-
----
-
-# ✅ **2. Rest operator in array destructuring**
-
-```javascript
-const [first, ...others] = [10, 20, 30, 40];
-
-console.log(first);   // 10
-console.log(others);  // [20, 30, 40]
-```
-
----
-
-# ✅ **3. Rest operator in object destructuring**
-
-```javascript
-const user = { name: "John", age: 25, city: "NY" };
-
-const { name, ...details } = user;
-
-console.log(name);     // John
-console.log(details);  // { age: 25, city: "NY" }
-```
-
----
-
-# ⭐ One-line interview version
-
-**The rest operator (`...`) collects the remaining elements into an array or object, often used in function parameters and destructuring.**
-
-
-
 <span style="color:green;">================================================================ </span>
-
-<h3 id="what_is_the_spread_operator">  What is the spread operator?  <h3>
-
-
-The **spread operator (`...`)** is used to **expand** (spread out) elements of an array, string, or object into individual items.
-
-It is the opposite of the **rest operator**.
-
----
-
-# ✅ **1. Spread in Arrays**
-
-### ✔ Copying an array
-
-```javascript
-const arr1 = [1, 2, 3];
-const arr2 = [...arr1];
-
-console.log(arr2); // [1, 2, 3]
-```
-
----
-
-### ✔ Merging arrays
-
-```javascript
-const a = [1, 2];
-const b = [3, 4];
-
-const merged = [...a, ...b];
-console.log(merged); // [1, 2, 3, 4]
-```
-
----
-
-# ✅ **2. Spread in Objects**
-
-### ✔ Cloning an object
-
-```javascript
-const user = { name: "John", age: 20 };
-const copy = { ...user };
-
-console.log(copy); // { name: "John", age: 20 }
-```
-
----
-
-### ✔ Merging objects
-
-```javascript
-const obj1 = { a: 1 };
-const obj2 = { b: 2 };
-
-const combined = { ...obj1, ...obj2 };
-console.log(combined); // { a: 1, b: 2 }
-```
-
----
-
-# ✅ **3. Spread in Function Calls**
-
-```javascript
-function add(a, b, c) {
-  return a + b + c;
-}
-
-const numbers = [1, 2, 3];
-console.log(add(...numbers)); // 6
-```
-
----
-
-# ⭐ Rest vs Spread (Interview Point)
-
-| Operator           | Purpose                              |
-| ------------------ | ------------------------------------ |
-| **Rest (`...`)**   | Collects items into an array/object  |
-| **Spread (`...`)** | Expands items out of an array/object |
-
-Example:
-
-```javascript
-const [first, ...rest] = [1, 2, 3]; // rest collects
-const arr = [...rest];              // spread expands
-```
-
----
-
-# ⭐ One-line interview version
-
-**The spread operator (`...`) expands elements of an array or object, making it easy to copy, merge, or pass values.**
-
-
 
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_are_modules_in_javascript">  What are modules in JavaScript?  <h3>
 
-![Modules](https://cdn.hashnode.com/res/hashnode/image/upload/v1589522328379/zyypPPNtV.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)
+
+<img alt="Image" src="https://github.com/user-attachments/assets/e0054f34-38ad-4338-aaa4-ed76f6cb77c9" />
 
 **Modules** in JavaScript are files that contain code which is **isolated**, **reusable**, and can be **imported or exported** to other files.
 
@@ -6575,7 +6162,6 @@ Modules help keep code organized, prevent global variable pollution, and allow s
 ✔ Encourages separation of concerns
 
 ---
-![Modules](https://cdn.hashnode.com/res/hashnode/image/upload/v1589460170784/l8WMLy5Sv.png?auto=compress,format&format=webp)
 
 
 # ✅ **1. Exporting from a module**
@@ -6648,7 +6234,6 @@ console.log(multiply(2, 3)); // 6
 <span style="color:green;">================================================================ </span>
 
 <h3 id="difference_between_named_and_default_exports">  Difference between named and default exports?  <h3>
-
 
 JavaScript modules allow you to export code in **two ways**:
 
@@ -6725,11 +6310,11 @@ import m from './utils.js'; // "m" can be any name
 
 
 
-
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_dynamic_import">  What is dynamic import?  <h3>
 
+![Image](https://github.com/user-attachments/assets/413aff84-236d-4eba-bc86-b8ccb15b57f2)
 
 **Dynamic import** allows you to load a module **only when you need it**, instead of loading it at the start.
 It uses the `import()` function, which returns a **Promise**.
@@ -6797,7 +6382,7 @@ if (user.isAdmin) {
 <h3 id="what_is_the_temporal_dead_zone">  What is the temporal dead zone?  <h3>
 
 
-![Temporal Dead Zone](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nvxnq-bqM1iyTqwO_clFYQ.jpeg)
+![Image](https://github.com/user-attachments/assets/c8829c18-d8f9-4198-9316-90491d4d16ad)
 
 The **Temporal Dead Zone (TDZ)** is the period between:
 
@@ -6865,9 +6450,7 @@ It ensures you **don’t use a variable before its initialization**, even though
 
 <h3 id="what_is_nullish_coalescing">  What is nullish coalescing?  <h3>
 
-
-![Nullish](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F1zsfrrqsjxrby1lks02d.png)
-
+<img  alt="Image" src="https://github.com/user-attachments/assets/80257e74-172b-499e-a058-3c661a965127" />
 
 The **nullish coalescing operator (`??`)** returns the **right-hand value only when the left-hand value is *nullish***.
 
@@ -6916,7 +6499,6 @@ It’s safer than `||` when values like `0`, `false`, or `""` are valid and shou
 <span style="color:green;">================================================================ </span>
 
 <h3 id="what_is_optional_chaining">  What is optional chaining?  <h3>
-
 
 ## ⭐ **What is Optional Chaining (`?.`)?**
 
@@ -6984,474 +6566,6 @@ console.log(data?.[0]);
 
 <span style="color:green;">================================================================ </span>
 
-<h3 id="what_is_top_level_await">  What is top-level await?  <h3>
-
-
-**Top-level `await`** means you can use the `await` keyword **directly at the top level of a module**, without wrapping it inside an async function.
-
-This only works in **ES modules** (`.mjs` files or `"type": "module"` in package.json).
-
-Before this feature, `await` was allowed **only inside async functions**.
-
----
-
-## ⭐ Why is it useful?
-
-It lets your module **pause execution** until a Promise finishes—perfect for:
-
-* loading configuration
-* reading files
-* fetching data
-* dynamic imports
-* database connections
-
-All **before** the rest of the module runs.
-
----
-
-## ⭐ Example (Without top-level await)
-
-Before:
-
-```javascript
-(async function() {
-  const data = await fetch('/api/user');
-  console.log(data);
-})();
-```
-
----
-
-## ⭐ Example (With top-level await)
-
-```javascript
-const response = await fetch('/api/user');
-const data = await response.json();
-
-console.log(data);
-```
-
-No function wrapper needed.
-
----
-
-## ⭐ Example — dynamic import with top-level await
-
-```javascript
-const module = await import('./math.js');
-console.log(module.add(2, 3));
-```
-
----
-
-## ⭐ Interview one-liner
-
-**Top-level await lets you use `await` directly in ES modules, allowing the module to pause while waiting for async operations without wrapping code in an async function.**
-
-
 <span style="color:green;">================================================================ </span>
 
-<!-- 
-# ✅ **What is a `Set`?**
-
-A **Set** is a collection of **unique values** — it **cannot contain duplicates**.
-
-### Example:
-
-```js
-const s = new Set([1, 2, 2, 3]);
-console.log(s); // Set { 1, 2, 3 }
-```
-
-### Key Points:
-
-* Stores **unique** values
-* Order is preserved by insertion
-* Can store any type of value
-* Useful for removing duplicates
-
----
-
-# ✅ **What is a `Map`?**
-
-A **Map** is a collection of **key–value pairs**, similar to an object — but more powerful.
-
-### Example:
-
-```js
-const m = new Map();
-m.set("name", "John");
-m.set("age", 25);
-console.log(m.get("name")); // John
-```
-
-### Key Points:
-
-* Keys can be **any type** (objects, numbers, functions, etc.)
-* Keeps keys in **insertion order**
-* Has better performance for large key-value collections than plain objects
-
----
-
-# ✅ **What is a `WeakMap`?**
-
-A **WeakMap** is like a Map, but:
-
-* **Keys must be objects**
-* Keys are kept **weakly**
-  → If the object key is removed elsewhere in the code, it is automatically deleted from the WeakMap.
-
-### Example:
-
-```js
-let obj = { id: 1 };
-const wm = new WeakMap();
-
-wm.set(obj, "some value");
-
-obj = null; // object is removed → weakmap entry auto removed
-```
-
-### Key Points:
-
-* Keys must be **objects only**
-* Values can be anything
-* Keys can be garbage-collected
-* Useful for private data or caching
-* **Cannot be iterated** (no size, no keys(), no values())
-
----
-
-# ✅ **What is a `WeakSet`?**
-
-A **WeakSet** is like a Set, but:
-
-* Only stores **objects**
-* Objects are kept **weakly**
-
-### Example:
-
-```js
-let user = { name: "Tom" };
-const ws = new WeakSet();
-
-ws.add(user);
-
-user = null; // object removed → weakset entry auto removed
-```
-
-### Key Points:
-
-* Only objects allowed
-* No duplicates
-* Automatically removes items when object becomes unreachable
-* Cannot be iterated (no size, no forEach)
-
----
-
-# ⭐ Quick Summary Table
-
-| Feature     | Unique?     | Keys/Values allowed      | Weak? | GC Auto Cleanup | Iterable? |
-| ----------- | ----------- | ------------------------ | ----- | --------------- | --------- |
-| **Set**     | Yes         | Any values               | No    | No              | Yes       |
-| **Map**     | Keys unique | Any type (incl. objects) | No    | No              | Yes       |
-| **WeakMap** | Keys unique | **Objects only**         | Yes   | Yes             | **No**    |
-| **WeakSet** | Yes         | **Objects only**         | Yes   | Yes             | **No**    |
-
----
-
-If you want I can also give real-world examples or use-cases for each one.
-
-
-
 <span style="color:green;">================================================================ </span>
-
-
-## ⭐ **What is CSP (Content Security Policy)?**
-
-**CSP (Content Security Policy)** is a security feature added in HTTP response headers that helps prevent attacks like **XSS**, **data injection**, and **clickjacking** by restricting what resources the browser is allowed to load and execute.
-
-It tells the browser **what is allowed**:
-
-* Which scripts can run
-* Which styles can load
-* Which domains are trusted
-* Whether inline scripts are allowed
-
-If something violates the policy, the browser **blocks it automatically**.
-
----
-
-## ⭐ Why CSP is used?
-
-Mainly to prevent:
-
-* **Cross-Site Scripting (XSS)**
-* **Data injection attacks**
-
----
-
-## ⭐ Example CSP Header
-
-### Block all inline scripts & allow scripts only from your domain:
-
-```
-Content-Security-Policy: script-src 'self';
-```
-
-### Allow scripts from your domain + trusted CDN:
-
-```
-Content-Security-Policy: script-src 'self' https://cdn.example.com;
-```
-
-### Block all scripts except trusted ones:
-
-```
-Content-Security-Policy: default-src 'self';
-```
-
----
-
-## ⭐ Example of CSP Blocking XSS
-
-If a hacker injects:
-
-```html
-<script>alert("Hacked!")</script>
-```
-
-CSP will **block it** because inline scripts are disabled.
-
----
-
-## ⭐ One-line Interview Version
-
-**CSP is a browser security mechanism that helps prevent XSS by controlling which scripts, styles, and resources are allowed to load on a page.**
-
-
-
-<span style="color:green;">================================================================ </span>
-
-
-![CSRF](https://media.geeksforgeeks.org/wp-content/uploads/20221219133429/CSRF-Diagram-(1).png)
-
-
-**CSRF (Cross-Site Request Forgery)** is a security attack where a malicious website tricks a logged-in user into performing unwanted actions on another website **without their knowledge**.
-
-Because the user is already authenticated (logged in), the browser automatically sends their:
-
-* cookies
-* session token
-* authentication headers
-
-So the attack looks **legitimate** to the server.
-
----
-
-## ⭐ Example of a CSRF Attack
-
-1. A user is logged in to `bank.com`.
-2. The user visits a malicious website.
-3. That website secretly sends a request like:
-
-```html
-<img src="https://bank.com/transfer?amount=1000&to=hacker" />
-```
-
-4. The browser sends the **session cookies** with the request.
-5. The bank thinks the user sent it → money is transferred.
-
----
-
-## ⭐ Why CSRF Happens?
-
-Because browsers automatically include authentication cookies with every request.
-
----
-
-## ⭐ How to Prevent CSRF
-
-### ✔ 1. **CSRF Tokens** (most important)
-
-A random token added to forms and AJAX requests.
-
-### ✔ 2. **SameSite Cookies**
-
-Set cookie so it is **not** sent on cross-site requests.
-
-```
-Set-Cookie: sessionid=abc; SameSite=Lax;
-```
-
-### ✔ 3. **Check Referer/Origin headers**
-
-### ✔ 4. **Use CAPTCHA for critical actions**
-
-### ✔ 5. **Double Submit Cookie technique**
-
----
-
-## ⭐ One-line Interview Version
-
-**CSRF is an attack where a malicious site tricks a logged-in user into making unwanted actions on another website by abusing their authentication cookies.**
-
-
-<span style="color:green;">================================================================ </span>
-
-
-In JavaScript, you can throw custom errors using the `throw` keyword. You can throw either:
-
-1. A built-in `Error` object with a custom message
-2. A completely custom error class (cleaner and recommended for large apps)
-
----
-
-## ✅ **1. Throwing a custom message with built-in Error**
-
-```js
-throw new Error("Something went wrong!");
-```
-
-You can also throw other types:
-
-```js
-throw new TypeError("Invalid type provided!");
-throw new RangeError("Value out of range!");
-```
-
----
-
-## ✅ **2. Creating your own custom error class (recommended)**
-
-```js
-class MyCustomError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = "MyCustomError"; // Optional: sets the error name
-  }
-}
-
-function demo() {
-  throw new MyCustomError("This is my custom error!");
-}
-
-try {
-  demo();
-} catch (err) {
-  console.error(err.name);    // MyCustomError
-  console.error(err.message); // This is my custom error!
-}
-```
-
-This approach makes debugging easier and helps categorize errors.
-
----
-
-## ⚡ **3. Throwing simple values (not recommended)**
-
-JavaScript allows it but avoid in real projects:
-
-```js
-throw "Something bad happened";  // string
-throw 404;                       // number
-throw { message: "error" };      // object
-```
-
----
-
-### ⭐ Best Practice
-
-Always throw `Error` (or custom classes extending `Error`) so stack traces are meaningful and consistent.
-
-
-<span style="color:green;">================================================================ </span>
-
-
-
-# ✅ **Main Categories of JavaScript Errors**
-
-
-# ✅ **Built-in JavaScript Error Types**
-
-| Error Type         | When it Happens                                                |
-| ------------------ | -------------------------------------------------------------- |
-| **Error**          | Generic error                                                  |
-| **SyntaxError**    | Invalid JavaScript syntax                                      |
-| **ReferenceError** | Using a variable that doesn’t exist                            |
-| **TypeError**      | Using a value of the wrong type (e.g., calling a non-function) |
-| **RangeError**     | Value out of range (e.g., recursive calls maxed out)           |
-| **EvalError**      | Related to `eval()` (rarely used now)                          |
-| **URIError**       | Bad `encodeURI()` or `decodeURI()` usage                       |
-| **AggregateError** | Multiple errors thrown at once (Promises)                      |
-
-
-
-
-
-<span style="color:green;">================================================================ </span>
-
-**Minification** is the process of removing all unnecessary characters from your code *without changing how it works*, to make the file size smaller and load faster.
-
-![minifid](https://blog.arahoster.com/wp-content/uploads//image-25.png)
-
-
-# ✅ What Minification Removes
-
-Minification removes things that are not needed for execution:
-
-* **Whitespace**
-* **Line breaks**
-* **Comments**
-* **Long variable names** (renamed to short ones)
-* **Unnecessary semicolons**
-* **Unused code (if supported by tool)**
-
----
-
-# ✅ Example Before Minification
-
-```js
-function addNumbers(a, b) {
-    // This function returns sum
-    return a + b;
-}
-```
-
-### After Minification:
-
-```js
-function addNumbers(a,b){return a+b;}
-```
-
----
-
-# ✅ Why Minification Is Used
-
-* Faster page load
-* Smaller JavaScript/CSS files
-* Better performance for mobile users
-* Less bandwidth usage
-* Makes code harder to read (light obfuscation)
-
----
-
-# ✅ Tools That Minify Code
-
-Common tools include:
-
-* **Terser**
-* **UglifyJS**
-* **Babel Minify**
-* **Google Closure Compiler**
-* **Webpack (built-in minification)**
-* **ESBuild**
-
----
-
-If you want, I can show how to minify JS using Webpack, Vite, or a single CLI tool.
-
-
-
-<span style="color:green;">================================================================ </span>
- -->
