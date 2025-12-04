@@ -265,7 +265,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
   <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_javascript">What is JavaScript?</h2>
+<h2 style="color:green" id="what_is_javascript">What is JavaScript?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/450e3187-c6a3-40e5-9ab6-c0f10a479832" />
 
@@ -290,7 +290,7 @@ Just tell me!
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_javascript_data_types">What are JavaScript data types?</h2>
+<h2 style="color:green" id="what_are_javascript_data_types">What are JavaScript data types?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/97458b53-5ea6-4ecf-9ea5-2e60c50e6efc" />
 
@@ -366,7 +366,7 @@ Arrays, functions, dates—all are technically **objects**.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_var_let_and_const">What is the difference between `var`, `let`, and `const`?</h2>
+<h2 style="color:green" id="what_is_the_difference_between_var_let_and_const">What is the difference between `var`, `let`, and `const`?</h2>
 
 Here’s a clear and simple explanation of the differences between **`var`**, **`let`**, and **`const`** in JavaScript:
 
@@ -426,7 +426,7 @@ let b = 20;
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_hoisting">What is hoisting?</h2>
+<h2 style="color:green" id="what_is_hoisting">What is hoisting?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/31f790cc-60a6-4d6d-8992-ed07b98bc9dc" />
 
@@ -515,7 +515,7 @@ If you want, I can also explain:
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_typeof_operator">What is the `typeof` operator?</h2>
+<h2 style="color:green" id="what_is_the_typeof_operator">What is the `typeof` operator?</h2>
 
 ### **8. What is the `typeof` operator?**
 
@@ -548,7 +548,7 @@ typeof function () {}; // "function"
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_primitive_and_non_primitive_values">What are primitive and non-primitive values?</h2>
+<h2 style="color:green" id="what_are_primitive_and_non_primitive_values">What are primitive and non-primitive values?</h2>
 
 ### **9. What are primitive and non-primitive values?**
 
@@ -620,7 +620,7 @@ Non-primitive values are **copied by reference**.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="difference">Mutable vs Immutable  and Value Type vs Reference Type and Primitive vs Non-Primitive and Implicit Type vs Explicit Type</h2>
+<h2 style="color:green" id="difference">Mutable vs Immutable  and Value Type vs Reference Type and Primitive vs Non-Primitive and Implicit Type vs Explicit Type</h2>
 Here is the **same simple explanation with icons** to make it extra clear 👇
 
 
@@ -773,7 +773,7 @@ Boolean(1)   // true
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="variable_declaration_vs_assignment_vs_initialization">variable declaration vs assignment vs initialization in javascript</h2>
+<h2 style="color:green" id="variable_declaration_vs_assignment_vs_initialization">variable declaration vs assignment vs initialization in javascript</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/6d45361c-222b-4f77-b696-60a31b68042d" />
 
@@ -781,7 +781,7 @@ Boolean(1)   // true
 <span style="color:green;">================================================================ </span>
 
 
-<h2 id="what_is_nan">What is NaN?</h2>
+<h2 style="color:green" id="what_is_nan">What is NaN?</h2>
 
 
 ### **10. What is `NaN`?**
@@ -847,7 +847,7 @@ Number.isNaN(value);
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_strict_mode">What is strict mode?</h2>
+<h2 style="color:green" id="what_is_strict_mode">What is strict mode?</h2>
 
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/825121f6-7f2e-42fc-ab37-d40c69f4c18a" /> 
@@ -927,7 +927,7 @@ Some operations that would normally fail silently now throw real errors.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_value_and_reference_types">What is the difference between `value` and `reference` types?</h2>
+<h2 style="color:green" id="what_is_the_difference_between_value_and_reference_types">What is the difference between `value` and `reference` types?</h2>
 
 
 ![Image](https://github.com/user-attachments/assets/12066d01-7ccf-434f-8988-af528d2d3964)
@@ -1009,7 +1009,7 @@ console.log(obj2.name); // "Peter" (affected)
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_use_of_semicolons_in_javascript">What is the use of semicolons in JavaScript?</h2>
+<h2 style="color:green" id="what_is_the_use_of_semicolons_in_javascript">What is the use of semicolons in JavaScript?</h2>
 
 ---
 
@@ -1086,7 +1086,7 @@ Ready for the next question!
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_declaration_and_initialization">What is the difference between declaration and initialization(or assignment)?</h2>
+<h2 style="color:green" id="what_is_the_difference_between_declaration_and_initialization">What is the difference between declaration and initialization(or assignment)?</h2>
 
 ### **15. What is the difference between declaration and initialization(or assignment)?**
 
@@ -1136,7 +1136,7 @@ let y = 20;
 
 
 
-<h2 id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
+<h2 style="color:green" id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
 
 
 ![Image](https://github.com/user-attachments/assets/657be92d-1d2f-4163-beb8-8c4a7ddd6e41)
@@ -1229,7 +1229,7 @@ Number(false); // 0
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
+<h2 style="color:green" id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/f4200b75-73c5-4197-93ef-09330d447ea0" />
 
@@ -1382,7 +1382,7 @@ Return c  (all false → OR returns last value)
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_equale_and_object_is">What is the difference between `==` and `Object.is()`?</h2>
+<h2 style="color:green" id="what_is_the_difference_between_equale_and_object_is">What is the difference between `==` and `Object.is()`?</h2>
 
 ### **18. What is the difference between `==` and `Object.is()`?**
 
@@ -1443,7 +1443,7 @@ Object.is(true, true); // true
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h2>
+<h2 style="color:green" id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h2>
 
 ![scope](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*KxHwVbB0zhnSVrhrWtT-gg.jpeg)
 
@@ -1507,7 +1507,7 @@ In other words — it decides **which parts of the program can see or use a vari
 
 <span style="color:green;">================================================================ </span>
 
-<h2  id="types_of_the_functions"> Types of Functions in JavaScript</h2>
+<h2 style="color:green"  id="types_of_the_functions"> Types of Functions in JavaScript</h2>
 
 ![types of funtion](https://media.licdn.com/dms/image/v2/D4D12AQE0Jc6BcnfYJw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1695628683404?e=2147483647&v=beta&t=bt37F0S7X92xIKcvkRFWrt9v_QEUdPGI03FLoZma-VM)
 
@@ -1709,7 +1709,7 @@ class Car {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_an_arrow_function">  What is an arrow function? </h2>
+ <h2 style="color:green" id="what_is_an_arrow_function">  What is an arrow function? </h2>
 
 ![Arrow function](https://www.devopsconsulting.in/blog/wp-content/uploads/2023/05/image-17.png)
 
@@ -1782,7 +1782,7 @@ they take it from the outer (global) scope.
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_a_function_expression">  What is a function expression? </h2>
+ <h2 style="color:green" id="what_is_a_function_expression">  What is a function expression? </h2>
 
 A **function expression** is a function that is **assigned to a variable**, rather than declared with a name.
 
@@ -1859,7 +1859,7 @@ setTimeout(function () {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_the_this_keyword">  What is the `this` keyword? </h2>
+ <h2 style="color:green" id="what_is_the_this_keyword">  What is the `this` keyword? </h2>
 
 `this` is a special keyword in JavaScript that refers to the **current execution context** — meaning **the object that is calling the function**.
 
@@ -1960,7 +1960,7 @@ If you want, I can give real interview trick questions about `this`.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_a_closure">What is a closure?</h2>
+<h2 style="color:green" id="what_is_a_closure">What is a closure?</h2>
 
 
 ![Closure](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Vjq0Zot-JSJtc4VgWRRdSQ.png)
@@ -2034,7 +2034,7 @@ c(); // 3
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_lexical_scope">What is lexical scope?</h2>
+<h2 style="color:green" id="what_is_lexical_scope">What is lexical scope?</h2>
 
 
 **Lexical scope** (also called **static scope**) means that the **scope of a variable is determined by where it is written in the code**, not where it is called.
@@ -2212,7 +2212,7 @@ Closures exist *because* JavaScript uses **lexical scope**.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_an_iife">What is an IIFE?</h2>
+<h2 style="color:green" id="what_is_an_iife">What is an IIFE?</h2>
 
 ![IIFE](https://media.licdn.com/dms/image/v2/D4E22AQGGQAKmr7TMLg/feedshare-shrink_800/B4EZjkq0D.IMAg-/0/1756183086896?e=2147483647&v=beta&t=x4PrVtKEYhpoilpkAolizx8tvaXFbpy3qJkawNA3xuo)
 
@@ -2278,7 +2278,7 @@ console.log(secret); // ❌ Error
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_recursion">What is recursion?</h2>
+<h2 style="color:green" id="what_is_recursion">What is recursion?</h2>
 
 
 ![function recursion](https://i.ytimg.com/vi/vLhHyGTkjCs/maxresdefault.jpg)
@@ -2310,7 +2310,7 @@ Recursion is when a function solves a problem by breaking it into smaller versio
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_callbacks">What are callbacks function?</h2>
+<h2 style="color:green" id="what_are_callbacks">What are callbacks function?</h2>
 
 A **callback** is a **function passed as an argument to another function**, and it runs **after an asynchronous task completes**.
 
@@ -2361,7 +2361,7 @@ Want the next one?
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_highe_order_functions">What are higher-order functions?</h2>
+<h2 style="color:green" id="what_are_highe_order_functions">What are higher-order functions?</h2>
 
 ![higher order function](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2tm40tfx3omj70859053.png)
 
@@ -2420,7 +2420,7 @@ A higher-order function is any function that **accepts a function**, **returns a
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_currying">What is currying?</h2>
+<h2 style="color:green" id="what_is_currying">What is currying?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/50ef5c17-db3b-4a44-9060-08083cebeb85" />
 
@@ -2485,7 +2485,7 @@ Currying breaks a multi-argument function into a chain of single-argument functi
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_memoization">What is memoization?</h2>
+<h2 style="color:green" id="what_is_memoization">What is memoization?</h2>
 
 ![Image](https://github.com/user-attachments/assets/f277bf84-bc32-4ef9-80d7-1ec67be95e99)
 
@@ -2549,7 +2549,7 @@ Memoization improves performance by **storing previous results** and returning t
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_the_differences_between_call_apply_and_bind">What are the differences between `call()`, `apply()`, and `bind()`?</h2>
+<h2 style="color:green" id="what_are_the_differences_between_call_apply_and_bind">What are the differences between `call()`, `apply()`, and `bind()`?</h2>
 
 All three are used to **set the value of `this`** in a function, but they differ in **how arguments are passed** and **when the function runs**.
 
@@ -2634,7 +2634,7 @@ If you want, I can show real-world use cases (event handlers, borrowing methods,
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_debouncing">What is debouncing?</h2>
+<h2 style="color:green" id="what_is_debouncing">What is debouncing?</h2>
 
 <!-- <img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" /> -->
 
@@ -2694,7 +2694,7 @@ If user types fast, the function runs **only after 500ms** of no typing.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_throttling">What is throttling?</h2>
+<h2 style="color:green" id="what_is_throttling">What is throttling?</h2>
 
 <img alt="Image" src="https://github.com/user-attachments/assets/a6271ad2-9182-4e06-9943-5ce4cdda665b" />
 
@@ -2756,7 +2756,7 @@ Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h2>
+<h2 style="color:green" id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h2>
 
 ![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
 
@@ -2858,7 +2858,7 @@ If you want, I can explain:
 <span style="color:green;">================================================================ </span>
 
 
-<h2 id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
+<h2 style="color:green" id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
 
 JavaScript gives you **several ways** to create objects.
 Here are the **main methods** 👇
@@ -2986,7 +2986,7 @@ p1.greet(); // Hi, I'm John
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="difference_between_dot_notation_and_bracket_notation" >Difference between dot notation and bracket notation? </h2>
+<h2 style="color:green" id="difference_between_dot_notation_and_bracket_notation" >Difference between dot notation and bracket notation? </h2>
 
 JavaScript provides **two ways** to access object properties:
 
@@ -3065,7 +3065,7 @@ console.log(obj["first name"]); // valid
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_prototypal_inheritance" >What is prototypal inheritance? </h2>
+<h2 style="color:green" id="what_is_prototypal_inheritance" >What is prototypal inheritance? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/36d69dfd-eb45-4109-aa36-0bbab624fd0b" />
 
@@ -3133,7 +3133,7 @@ Prototypal inheritance allows objects to inherit properties from other objects t
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_prototype_chain" >What is the prototype chain? </h2>
+<h2 style="color:green" id="what_is_the_prototype_chain" >What is the prototype chain? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/7dce80f9-5fd5-46f1-b065-b44e53cc5240" />
 
@@ -3221,7 +3221,7 @@ The prototype chain is the path JavaScript follows to find properties by checkin
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_a_constructor_function" >What is a constructor function? </h2>
+<h2 style="color:green" id="what_is_a_constructor_function" >What is a constructor function? </h2>
 
 A **constructor function** is a special kind of function used to create **multiple objects with the same structure and behavior**.
 
@@ -3283,7 +3283,7 @@ A constructor function is a blueprint used with the `new` keyword to create mult
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_es6_classes" >What are ES6 classes? </h2>
+<h2 style="color:green" id="what_are_es6_classes" >What are ES6 classes? </h2>
 
 **ES6 classes** are a modern, cleaner syntax introduced in ES6 (2015) for creating objects and handling inheritance in JavaScript.
 
@@ -3363,7 +3363,7 @@ Want the next question?
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_object_create" >What is `Object.create()`? </h2>
+<h2 style="color:green" id="what_is_object_create" >What is `Object.create()`? </h2>
 
 `Object.create()` is a method used to **create a new object** and **directly set its prototype**.
 
@@ -3443,7 +3443,7 @@ child → parent → Object.prototype → null
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="difference_between_object_freeze_and_object_seal" >Difference between `Object.freeze()` and `Object.seal()`? </h2>
+<h2 style="color:green" id="difference_between_object_freeze_and_object_seal" >Difference between `Object.freeze()` and `Object.seal()`? </h2>
 
 Both are used to **restrict changes** to an object, but the level of restriction is different.
 
@@ -3521,7 +3521,7 @@ console.log(obj); // { a: 100 }
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? </h2>
+<h2 style="color:green" id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? </h2>
 
 ![Image](https://github.com/user-attachments/assets/e5defe2d-f946-4d3c-87e9-7729c428d569)
 
@@ -3597,7 +3597,7 @@ If you'd like, I can explain with diagrams or real-world analogies!
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="how_do_you_clone_an_object" >How do you clone an object? </h2>
+<h2 style="color:green" id="how_do_you_clone_an_object" >How do you clone an object? </h2>
 
 Cloning an object means creating a **copy** of it.
 There are **two types** of cloning:
@@ -3685,7 +3685,7 @@ function deepClone(obj) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_spread_and_rest_operators_in_javascript" >What are Spread and Rest Operators in JavaScript? </h2>
+<h2 style="color:green" id="what_are_spread_and_rest_operators_in_javascript" >What are Spread and Rest Operators in JavaScript? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/429a865f-d9d3-49ca-8669-1c6d77511ff2" />
 
@@ -3765,7 +3765,7 @@ console.log(rest); // [20, 30, 40]
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="difference_between_slice_and_splice" >Difference between `slice()` and `splice()`? </h2>
+<h2 style="color:green" id="difference_between_slice_and_splice" >Difference between `slice()` and `splice()`? </h2>
 
 ## ✅ Difference Between `slice()` and `splice()`
 
@@ -3828,7 +3828,7 @@ console.log(arr); // [1, 2, 3, 4]
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_methods"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
+<h2 style="color:green" id="what_is_the_difference_between_methods"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
 
 ### 🧩 1. **`forEach()`**
 
@@ -3943,7 +3943,7 @@ console.log(total);
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="how_do_you_remove_duplicates_from_an_array" >How do you remove duplicates from an array? </h2>
+<h2 style="color:green" id="how_do_you_remove_duplicates_from_an_array" >How do you remove duplicates from an array? </h2>
 
 There are several common ways.
 The **most modern and simplest** is using a **Set**.
@@ -4020,7 +4020,7 @@ console.log(result);
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="how_do_you_sort_an_array_of_objects"> How do you sort an array of objects? </h2>
+<h2 style="color:green" id="how_do_you_sort_an_array_of_objects"> How do you sort an array of objects? </h2>
 
 You sort an array of objects using **`Array.prototype.sort()`** with a **custom compare function**.
 
@@ -4171,7 +4171,7 @@ JSON.parse("[" + arr.toString() + "]");
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_dom">  What is the DOM? </h2>
+<h2 style="color:green" id="what_is_the_dom">  What is the DOM? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2bb73038-6391-43a8-a7cd-de5a72dc3876" />
 
@@ -4303,7 +4303,7 @@ If you want, I can also show:
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_difference_between_innertext_textcontent_and_innerhtml">  What is the difference between `innerText`, `textContent`, and `innerHTML`? </h2>
+<h2 style="color:green" id="what_is_the_difference_between_innertext_textcontent_and_innerhtml">  What is the difference between `innerText`, `textContent`, and `innerHTML`? </h2>
 
 These three properties all deal with **reading or changing content** inside an element, but they behave very differently.
 
@@ -4401,7 +4401,7 @@ Hello   ← bold text
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="how_do_you_select_dom_elements">  How do you select DOM elements? </h2>elements?
+<h2 style="color:green" id="how_do_you_select_dom_elements">  How do you select DOM elements? </h2>elements?
 
 JavaScript provides multiple methods to select elements from the DOM.
 They can be grouped into **modern** and **traditional** methods.
@@ -4513,7 +4513,7 @@ If you want, I can also explain:
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="how_do_you_create_dom_elements_dynamically">  How do you create DOM elements dynamically? </h2>elements dynamically?
+ <h2 style="color:green" id="how_do_you_create_dom_elements_dynamically">  How do you create DOM elements dynamically? </h2>elements dynamically?
 
 You can create DOM elements using JavaScript with three main steps:
 
@@ -4631,7 +4631,7 @@ If you want, I can show:
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_event_propagation_and_event_delegation">what is event propagation and event delegation?</h2>
+<h2 style="color:green" id="what_is_event_propagation_and_event_delegation">what is event propagation and event delegation?</h2>
 
 ![Image](https://github.com/user-attachments/assets/9b30f497-5c4c-465c-8c87-e659faedb713)
 
@@ -4820,7 +4820,7 @@ Only **one listener** handles **all list items**.
 
 <span style="color:green;">================================================================ </span>
 
-  <h2 id="what_is_event_bubbling">  What is event bubbling? </h2>
+  <h2 style="color:green" id="what_is_event_bubbling">  What is event bubbling? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/51397783-4a7a-4dc0-8b55-228a83c6757f" />
 
@@ -4889,7 +4889,7 @@ event.stopPropagation();
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_event_capturing">  What is event capturing? </h2>
+<h2 style="color:green" id="what_is_event_capturing">  What is event capturing? </h2>
 
 
 **Event capturing** is the opposite of bubbling.
@@ -4925,7 +4925,7 @@ If you want, I can explain the **full event flow (capturing → target → bubbl
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_event_delegation">  What is event delegation? </h2>
+ <h2 style="color:green" id="what_is_event_delegation">  What is event delegation? </h2>
 
 **Event delegation is a technique where you add ONE event listener to a parent element instead of adding separate listeners to many child elements.**
 
@@ -4987,7 +4987,7 @@ document.querySelector("ul").addEventListener("click", function (e) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_preventdefault">  What is `preventDefault()`? </h2>
+<h2 style="color:green" id="what_is_preventdefault">  What is `preventDefault()`? </h2>
 
 ## ✅ **Super Simple Explanation of `preventDefault()`**
 
@@ -5031,7 +5031,7 @@ form.addEventListener("submit", function (e) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_stoppropagation">  What is `stopPropagation()`? </h2>
+<h2 style="color:green" id="what_is_stoppropagation">  What is `stopPropagation()`? </h2>
 
 **`stopPropagation()` stops an event from moving to parent elements.**
 
@@ -5079,7 +5079,7 @@ button.addEventListener("click", function (e) {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_the_difference_between_target_and_currenttarget">  What is the difference between `target` and `currentTarget`? </h2>
+ <h2 style="color:green" id="what_is_the_difference_between_target_and_currenttarget">  What is the difference between `target` and `currentTarget`? </h2>
 
 ### 🔹 **`target`**
 
@@ -5119,7 +5119,7 @@ document.getElementById("box").addEventListener("click", function (e) {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_a_dom_event_listener">  What is a DOM event listener? </h2>
+ <h2 style="color:green" id="what_is_a_dom_event_listener">  What is a DOM event listener? </h2>
 
 **A DOM event listener is a function that runs when something happens on a webpage — like a click, key press, or mouse movement.**
 
@@ -5150,7 +5150,7 @@ button.addEventListener("click", function () {
 
 <span style="color:green;">================================================================ </span>
 
-## ✅ **Shadow DOM (Very Sim <h2 id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>ple Explanation)**
+## ✅ **Shadow DOM (Very Sim <h2 style="color:green" id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>ple Explanation)**
 
 It keeps styles and elements **separate** from the rest of the page so they don’t conflict.
 
@@ -5187,7 +5187,7 @@ Instead of changing the real DOM directly, React updates the virtual version fir
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_dataset_in_html">  What is `dataset` in HTML </h2>?
+ <h2 style="color:green" id="what_is_dataset_in_html">  What is `dataset` in HTML </h2>?
 
 `dataset` is an object that lets you access **data attributes** (custom attributes) in HTML.
 
@@ -5232,7 +5232,7 @@ btn.dataset.user = "mike";
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_ajax"> What is AJAX?</h2>
+ <h2 style="color:green" id="what_is_ajax"> What is AJAX?</h2>
 
 ### What is AJAX?\*\*
 
@@ -5272,7 +5272,7 @@ echo "Hello, this data came from the server without reloading!";
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_asynchronous_programming"> What is asynchronous programming?</h2>
+ <h2 style="color:green" id="what_is_asynchronous_programming"> What is asynchronous programming?</h2>
 
 **Asynchronous programming** is a way of writing code where tasks can run **in the background** without stopping or blocking the main program.
 
@@ -5325,7 +5325,7 @@ Because `setTimeout` runs asynchronously — it doesn’t block the code.
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_a_promise"> What is a Promise?</h2>
+ <h2 style="color:green" id="what_is_a_promise"> What is a Promise?</h2>
 
 A **Promise** in JavaScript is an object that represents the **future result** of an asynchronous operation.
 It acts like a placeholder for a value that you will get **later** (success or failure).
@@ -5370,7 +5370,7 @@ myPromise
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_async_await"> What is async/await?</h2>
+ <h2 style="color:green" id="what_is_async_await"> What is async/await?</h2>
 
 **async/await** is a modern JavaScript syntax used to handle asynchronous operations in a way that looks and reads like normal, synchronous code.
 
@@ -5421,7 +5421,7 @@ getData();
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_callback_hell_how_do_you_avoid_callback_hell"> What is callback hell. How do you avoid callback hell?</h2>
+<h2 style="color:green" id="what_is_callback_hell_how_do_you_avoid_callback_hell"> What is callback hell. How do you avoid callback hell?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/acce4d8c-2cba-4f4c-9c58-c232f878e60f" />
 
@@ -5503,7 +5503,7 @@ Break code into small functions instead of nesting.
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_the_fetch_api"> What is the fetch API?</h2>
+ <h2 style="color:green" id="what_is_the_fetch_api"> What is the fetch API?</h2>
 
 The **Fetch API** is a modern JavaScript interface used to make **HTTP requests** (like GET, POST) from the browser.
 It is used to fetch data from servers **asynchronously** and returns a **Promise**.
@@ -5557,7 +5557,7 @@ fetch("https://example.com/api", {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_event_loop">What is the event loop?</h2>
+<h2 style="color:green" id="what_is_the_event_loop">What is the event loop?</h2>
 
 
 ![Image](https://github.com/user-attachments/assets/8ffcfb6a-fcb8-48d8-9c14-3baf8b3ae8b5)
@@ -5653,7 +5653,7 @@ Ready for the next one!
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_call_stack">What is the call stack?</h2>
+<h2 style="color:green" id="what_is_the_call_stack">What is the call stack?</h2>
 
 ![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
 
@@ -5729,7 +5729,7 @@ The call stack is the part of the JavaScript engine that tracks function executi
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_are_settimeout_and_setinterval"> What are setTimeout and setInterval?</h2>
+ <h2 style="color:green" id="what_are_settimeout_and_setinterval"> What are setTimeout and setInterval?</h2>
 
 ### **1. `setTimeout()`**
 
@@ -5790,7 +5790,7 @@ setTimeout(() => {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_a_web_worker"> What is a Web Worker?</h2>
+ <h2 style="color:green" id="what_is_a_web_worker"> What is a Web Worker?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2e99d044-bf5a-4597-b503-02533540c183" />
 
@@ -5843,7 +5843,7 @@ onmessage = function (event) {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_a_service_worker"> What is a Service Worker?</h2>
+ <h2 style="color:green" id="what_is_a_service_worker"> What is a Service Worker?</h2>
 
  ![Image](https://github.com/user-attachments/assets/1f372e1e-2f9a-4390-9691-c27bcf7d64ff)
 
@@ -5896,7 +5896,7 @@ self.addEventListener("install", (event) => {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_is_cors"> What is CORS?</h2>
+ <h2 style="color:green" id="what_is_cors"> What is CORS?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/37d33742-d8ad-433c-be95-c22135ccb9a3" />
 
@@ -5959,7 +5959,7 @@ Otherwise → the browser will block the request.
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="same_origin_policy">What is SOP (Same Origin Policy)?</h2>
+<h2 style="color:green" id="same_origin_policy">What is SOP (Same Origin Policy)?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/e484c0d6-3645-4b18-bedb-99945533d543" />
 
@@ -6017,7 +6017,7 @@ SOP protects users from attacks like **XSS**, **CSRF**, and unauthorized data ac
 
 <span style="color:green;">================================================================ </span>
 
- <h2 id="what_are_sse"> What are SSE (Server-Sent Events)?</h2>
+ <h2 style="color:green" id="what_are_sse"> What are SSE (Server-Sent Events)?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/95bfbe3a-c777-4be6-8b55-945869399653" />
 
@@ -6095,7 +6095,7 @@ eventSource.onmessage = function (event) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_long_polling"> What is Long Polling ? </h2>
+<h2 style="color:green" id="what_is_long_polling"> What is Long Polling ? </h2>
 
 **Long polling** is a technique where the client sends a request to the server and **keeps the connection open** until the server has new data to send.
 
@@ -6160,7 +6160,7 @@ longPoll();
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_template_literals">  What are template literals?  </h2>
+<h2 style="color:green" id="what_are_template_literals">  What are template literals?  </h2>
 
 ![Template literal](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*OwdFaZ6A77pHTmwUpFKi0A.png)
 
@@ -6219,7 +6219,7 @@ console.log(`Total: ${a + b}`);
 <span style="color:green;">================================================================ </span>
 
 
-<h2 id="what_is_a_set">  What is a `Set`?  </h2>
+<h2 style="color:green" id="what_is_a_set">  What is a `Set`?  </h2>
 
 
 A **Set** in JavaScript is a built-in object that stores **unique values**.
@@ -6295,7 +6295,7 @@ for (const value of set) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_a_map">  What is a `Map`?  </h2>
+<h2 style="color:green" id="what_is_a_map">  What is a `Map`?  </h2>
 
 
 A **Map** in JavaScript is a collection of **key-value pairs** where:
@@ -6374,7 +6374,7 @@ for (const [key, value] of map) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_a_weakmap">  What is a WeakMap?  </h2>
+<h2 style="color:green" id="what_is_a_weakmap">  What is a WeakMap?  </h2>
 
 A **WeakMap** is a special kind of Map where:
 
@@ -6424,7 +6424,7 @@ user = null;
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_a_weakset">  What is a WeakSet?  </h2>
+<h2 style="color:green" id="what_is_a_weakset">  What is a WeakSet?  </h2>
 
 A **WeakSet** is similar to a Set, but with two key differences:
 
@@ -6478,7 +6478,7 @@ obj1 = null; // remove reference
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_are_modules_in_javascript">  What are modules in JavaScript?  </h2>
+<h2 style="color:green" id="what_are_modules_in_javascript">  What are modules in JavaScript?  </h2>
 
 
 <img alt="Image" src="https://github.com/user-attachments/assets/e0054f34-38ad-4338-aaa4-ed76f6cb77c9" />
@@ -6569,7 +6569,7 @@ console.log(multiply(2, 3)); // 6
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="difference_between_named_and_default_exports">  Difference between named and default exports?  </h2>
+<h2 style="color:green" id="difference_between_named_and_default_exports">  Difference between named and default exports?  </h2>
 
 JavaScript modules allow you to export code in **two ways**:
 
@@ -6648,7 +6648,7 @@ import m from './utils.js'; // "m" can be any name
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_dynamic_import">  What is dynamic import?  </h2>
+<h2 style="color:green" id="what_is_dynamic_import">  What is dynamic import?  </h2>
 
 ![Image](https://github.com/user-attachments/assets/413aff84-236d-4eba-bc86-b8ccb15b57f2)
 
@@ -6715,7 +6715,7 @@ if (user.isAdmin) {
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_the_temporal_dead_zone">  What is the temporal dead zone?  </h2>
+<h2 style="color:green" id="what_is_the_temporal_dead_zone">  What is the temporal dead zone?  </h2>
 
 
 ![Image](https://github.com/user-attachments/assets/c8829c18-d8f9-4198-9316-90491d4d16ad)
@@ -6784,7 +6784,7 @@ It ensures you **don’t use a variable before its initialization**, even though
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_nullish_coalescing">  What is nullish coalescing?  </h2>
+<h2 style="color:green" id="what_is_nullish_coalescing">  What is nullish coalescing?  </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/80257e74-172b-499e-a058-3c661a965127" />
 
@@ -6834,7 +6834,7 @@ It’s safer than `||` when values like `0`, `false`, or `""` are valid and shou
 
 <span style="color:green;">================================================================ </span>
 
-<h2 id="what_is_optional_chaining">  What is optional chaining?  </h2>
+<h2 style="color:green" id="what_is_optional_chaining">  What is optional chaining?  </h2>
 
 ### ⭐ **What is Optional Chaining (`?.`)?**
 
