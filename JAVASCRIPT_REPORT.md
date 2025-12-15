@@ -280,13 +280,6 @@ Here’s the simple breakdown:
 - **Event-driven and dynamic**, meaning it can react instantly to user actions.
 - **One of the core technologies of the web**, used almost everywhere.
 
-If you want, I can also explain:
-✔ how JavaScript works under the hood
-✔ key concepts (DOM, events, variables, functions)
-✔ differences between JavaScript and jQuery
-✔ examples with jQuery (since you prefer that)
-
-Just tell me!
 
 <span style="color:green;">================================================================ </span>
 
@@ -2638,8 +2631,7 @@ If you want, I can show real-world use cases (event handlers, borrowing methods,
 <!-- <img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" /> -->
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/80e2affc-c40b-4394-8d23-ccde5fdd934e" />
-**Debouncing means:
-A function will run only after the user stops doing something for some time.**
+
 
 ---
 
@@ -3765,8 +3757,6 @@ console.log(rest); // [20, 30, 40]
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="difference_between_slice_and_splice" >Difference between `slice()` and `splice()`? </h2>
-
-## ✅ Difference Between `slice()` and `splice()`
 
 | Feature                  | `slice()`                            | `splice()`                            |
 | ------------------------ | ------------------------------------ | ------------------------------------- |
@@ -5149,7 +5139,7 @@ button.addEventListener("click", function () {
 
 <span style="color:green;">================================================================ </span>
 
-## ✅ **Shadow DOM (Very Sim <h2 style="color:green" id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>ple Explanation)**
+<h2 style="color:green" id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>
 
 It keeps styles and elements **separate** from the rest of the page so they don’t conflict.
 
