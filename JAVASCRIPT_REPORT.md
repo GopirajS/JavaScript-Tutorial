@@ -1444,7 +1444,7 @@ Object.is(true, true); // true
 
 <h2 style="color:green" id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h2>
 
-![scope](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*KxHwVbB0zhnSVrhrWtT-gg.jpeg)
+<img  alt="Image" src="https://github.com/user-attachments/assets/2a1a5304-bda7-4ec1-b208-716fea4691a5" />
 
 **Scope** in JavaScript means **where variables and functions are accessible** in your code.
 
@@ -2280,7 +2280,7 @@ console.log(secret); // ❌ Error
 <h2 style="color:green" id="what_is_recursion">What is recursion?</h2>
 
 
-![function recursion](https://i.ytimg.com/vi/vLhHyGTkjCs/maxresdefault.jpg)
+<img  alt="Image" src="https://github.com/user-attachments/assets/432bf4c4-060a-49df-9079-08214d4dccb9" />
 
 **Recursion** is a technique where a function **calls itself** to solve a problem.
 
@@ -2421,7 +2421,7 @@ A higher-order function is any function that **accepts a function**, **returns a
 
 <h2 style="color:green" id="what_is_currying">What is currying?</h2>
 
-<img  alt="Image" src="https://github.com/user-attachments/assets/50ef5c17-db3b-4a44-9060-08083cebeb85" />
+<img alt="Image" src="https://github.com/user-attachments/assets/f4e5f26d-c0b2-4ab7-89db-f5fff027ac08" />
 
 **Currying** is a technique where a function that takes multiple arguments is transformed into **a series of functions**, each taking **one argument at a time**.
 
@@ -2637,8 +2637,7 @@ If you want, I can show real-world use cases (event handlers, borrowing methods,
 
 <!-- <img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" /> -->
 
-![Image](https://github.com/user-attachments/assets/961cf813-65ef-4e66-893a-878e0a9d79a6)
-
+<img  alt="Image" src="https://github.com/user-attachments/assets/80e2affc-c40b-4394-8d23-ccde5fdd934e" />
 **Debouncing means:
 A function will run only after the user stops doing something for some time.**
 
@@ -2695,8 +2694,7 @@ If user types fast, the function runs **only after 500ms** of no typing.
 
 <h2 style="color:green" id="what_is_throttling">What is throttling?</h2>
 
-<img alt="Image" src="https://github.com/user-attachments/assets/a6271ad2-9182-4e06-9943-5ce4cdda665b" />
-
+<img  alt="Image" src="https://github.com/user-attachments/assets/132420aa-82c8-46fb-85af-01db03355d08" />
 
 **Throttling means:
 A function will run only one time in a fixed time gap.
@@ -3522,7 +3520,9 @@ console.log(obj); // { a: 100 }
 
 <h2 style="color:green" id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? </h2>
 
-![Image](https://github.com/user-attachments/assets/e5defe2d-f946-4d3c-87e9-7729c428d569)
+![Image](https://github.com/user-attachments/assets/8afd2988-4829-4092-8f1b-c97a462a7077)
+
+<img  alt="Image" src="https://github.com/user-attachments/assets/e34ba726-168d-4f82-a4a4-de205fe934b1" />
 
 ### **1. Shallow Copy**
 
