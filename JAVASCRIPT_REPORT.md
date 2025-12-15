@@ -36,6 +36,8 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 ---
 
+
+
 ### 1. JavaScript Basics
 
 - [What is JavaScript?](#what_is_javascript)
@@ -209,8 +211,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 - [What is long polling?](#what_is_long_polling)
 
 
-
-### **6. ES6+ Features (20 Questions)**
+### 6. ES6+ Features
 
 
 -  [What are template literals?](#what_are_template_literals)
@@ -235,11 +236,10 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 -  [What is optional chaining?](#what_is_optional_chaining)
 
--  [What is top-level await?](#what_is_top_level_await)
-
-<!-- -  What are private class fields? -->
-<!-- -  What are static class methods? -->
-<!-- -  What are logical assignment operators? -->
+-  What is top-level await?
+-  What are private class fields?
+-  What are static class methods?
+-  What are logical assignment operators?
 
 
 
@@ -262,8 +262,12 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 -  How do you optimize JS performance?
 
 
+  <span style="color:green;">================================================================ </span>
+
+  <h1 style="text-align:center;" >JavaScript Basics</h1>
 
   <span style="color:green;">================================================================ </span>
+
 
 <h2 style="color:green" id="what_is_javascript">What is JavaScript?</h2>
 
@@ -1439,64 +1443,120 @@ Object.is(true, true); // true
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2a1a5304-bda7-4ec1-b208-716fea4691a5" />
 
-**Scope** in JavaScript means **where variables and functions are accessible** in your code.
 
-In other words — it decides **which parts of the program can see or use a variable**.
+JavaScript has **3 main scopes**:
 
-
-### 📘 **Types of Scope in JavaScript:**
-
-1. 🧱 **Global Scope**
-
-   * Variables declared **outside any function or block**
-   * Can be used **anywhere** in the code
-
-   ```js
-   let name = "John"; // global
-   function sayName() {
-     console.log(name); // can access
-   }
-   sayName(); // John
-   ```
-
-2. ⚙️ **Function Scope**
-
-   * Variables declared **inside a function**
-   * Can be used **only inside that function**
-
-   ```js
-   function greet() {
-     let message = "Hello!";
-     console.log(message);
-   }
-   greet();
-   // console.log(message); ❌ Error — not accessible outside
-   ```
-
-3. 📦 **Block Scope** (`let` and `const`)
-
-   * Variables declared inside `{ }`
-   * Can be used **only inside that block**
-
-   ```js
-   {
-     let age = 25;
-     console.log(age); // works
-   }
-   // console.log(age); ❌ Error
-   ```
+1. **Global Scope**
+2. **Function Scope**
+3. **Block Scope** (`{}` like `if`, `for`, `while`)
 
 ---
 
-### 🧠 **In short:**
+### Key Rules (Very Important)
 
-> **Scope** defines **where a variable can be accessed or used** in your program.
->
-> * `var` → function scope
-> * `let` & `const` → block scope
-> * outside everything → global scope
+### `var`
+
+* **Function-scoped**
+* ❌ NOT block-scoped
+
+### `let` and `const`
+
+* **Block-scoped**
+* ✅ Respect `{}`
+
+---
+
+### 1️⃣ Declared in **Global Scope**
+
+```js
+var a = 1;
+let b = 2;
+const c = 3;
+```
+
+| Can Access From | `var` | `let` | `const` |
+| --------------- | ----- | ----- | ------- |
+| Global Scope    | ✅     | ✅     | ✅       |
+| Function Scope  | ✅     | ✅     | ✅       |
+| Block Scope     | ✅     | ✅     | ✅       |
+
+✔️ **All are accessible everywhere below global**
+
+---
+
+### 2️⃣ Declared in **Function Scope**
+
+```js
+function test() {
+  var a = 1;
+  let b = 2;
+  const c = 3;
+}
+```
+
+| Can Access From | `var` | `let` | `const` |
+| --------------- | ----- | ----- | ------- |
+| Global Scope    | ❌     | ❌     | ❌       |
+| Function Scope  | ✅     | ✅     | ✅       |
+| Block Scope     | ✅     | ✅     | ✅       |
+
+✔️ **None escape the function**
+
+---
+
+### 3️⃣ Declared in **Block Scope**
+
+```js
+function test() {
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+}
+```
+
+| Can Access From | `var` | `let` | `const` |
+| --------------- | ----- | ----- | ------- |
+| Global Scope    | ❌     | ❌     | ❌       |
+| Function Scope  | ✅     | ❌     | ❌       |
+| Block Scope     | ✅     | ✅     | ✅       |
+
+### ⚠️ Important Correction
+
+Your statement:
+
+> Var can access from Block Scope, Function Scope
+
+✅ **Correct**
+But remember:
+
+* `var` **ignores block scope**
+* It becomes **function-scoped**
+
+---
+
+### 🔑 One-Line Summary
+
+| Keyword | Scope Type     |
+| ------- | -------------- |
+| `var`   | Function Scope |
+| `let`   | Block Scope    |
+| `const` | Block Scope    |
+
+---
+
+### 🧠 Best Practice (Real-World Use)
+
+* ❌ Avoid `var`
+* ✅ Use `let` (when value changes)
+* ✅ Use `const` (default choice)
+
+---
 
 
+<span style="color:green;">================================================================ </span>
+<h1 style="text-align:center;" >Functions & Execution</h1>
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green"  id="types_of_the_functions"> Types of Functions in JavaScript</h2>
@@ -2846,6 +2906,10 @@ If you want, I can explain:
 
 <span style="color:green;">================================================================ </span>
 
+<h1 style="text-align:center;" >Objects, Arrays, and Prototype</h1>
+
+<span style="color:green;">================================================================ </span>
+
 
 <h2 style="color:green" id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
 
@@ -4157,7 +4221,7 @@ JSON.parse("[" + arr.toString() + "]");
 - Can also be done using recursion or `reduce()`.
 
 <span style="color:green;">================================================================ </span>
-
+<h1 style="text-align:center;" > DOM & Browser</h1>
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_is_the_dom">  What is the DOM? </h2>
@@ -5221,6 +5285,10 @@ btn.dataset.user = "mike";
 
 <span style="color:green;">================================================================ </span>
 
+<h1 style="text-align:center;" >Asynchronous JavaScript</h1>
+
+<span style="color:green;">================================================================ </span>
+
  <h2 style="color:green" id="what_is_ajax"> What is AJAX?</h2>
 
 ### What is AJAX?\*\*
@@ -6146,7 +6214,7 @@ longPoll();
 
 
 <span style="color:green;">================================================================ </span>
-
+<h1 style="text-align:center;" >ES6+ Features</h1> 
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_are_template_literals">  What are template literals?  </h2>
