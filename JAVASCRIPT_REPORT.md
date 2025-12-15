@@ -503,12 +503,6 @@ var sayHi = function () {
 | Function Declaration | ✔ Yes               | ✔ Yes                      |
 | Function Expression  | ✔ Yes (as variable) | ❌ No                      |
 
----
-
-If you want, I can also explain:
-✔ TDZ with examples
-✔ Hoisting in jQuery callbacks
-✔ Common interview questions on hoisting
 
 <span style="color:green;">================================================================ </span>
 
@@ -576,9 +570,7 @@ x = 20;
 
 // y is still 10 (copy of value)
 ```
-
 Primitive values are **copied by value**.
-
 ---
 
 ### ✅ **Non-Primitive Values (Reference Types)**
@@ -693,8 +685,7 @@ console.log(y.name); // Alex
 
 ---
 
-## 🧱 **Primitive vs Non-Primitive**
-
+### 🧱 **Primitive vs Non-Primitive**
 ### 🔹 **Primitive (Simple Values)**
 
 * Immutable
@@ -729,7 +720,7 @@ Non-primitives:
 
 ---
 
-## 🔄 **Implicit vs Explicit Type**
+### 🔄 **Implicit vs Explicit Type**
 
 ### 🤖 **Implicit Type Conversion (Auto)**
 
@@ -754,7 +745,7 @@ Boolean(1)   // true
 
 ---
 
-## 🧠 **Quick Cheat Sheet**
+### 🧠 **Quick Cheat Sheet**
 
 | Concept        | Icon  | Meaning           |
 | -------------- | ----- | ----------------- |
@@ -831,7 +822,6 @@ NaN === NaN; // false
 ```js
 Number.isNaN(value);
 ```
-
 ---
 
 ### 🚀 Summary
@@ -846,9 +836,7 @@ Number.isNaN(value);
 
 <h2 style="color:green" id="what_is_strict_mode">What is strict mode?</h2>
 
-
 <img  alt="Image" src="https://github.com/user-attachments/assets/825121f6-7f2e-42fc-ab37-d40c69f4c18a" /> 
-
 
 ### What is Strict Mode (`"use strict"`) ?
 
