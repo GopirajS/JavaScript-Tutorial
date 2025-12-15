@@ -1139,7 +1139,7 @@ let y = 20;
 <h2 style="color:green" id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
 
 
-![Image](https://github.com/user-attachments/assets/657be92d-1d2f-4163-beb8-8c4a7ddd6e41)
+![Image](https://github.com/user-attachments/assets/89f0297e-87aa-4fad-8366-644dec73b0b5)
 
 
 ## ⭐ **Implicit Type Conversion (Type Coercion)**
@@ -1231,14 +1231,13 @@ Number(false); // 0
 
 <h2 style="color:green" id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
 
-<img  alt="Image" src="https://github.com/user-attachments/assets/f4200b75-73c5-4197-93ef-09330d447ea0" />
+<img  alt="Image" src="https://github.com/user-attachments/assets/4b79ebd3-db5e-4b08-84b1-f8d71fff460c" />
+
+<img  alt="Image" src="https://github.com/user-attachments/assets/8c2a5d20-6c25-4915-9739-5dd339c741a4" />
 
 **Short-circuit evaluation** is a behavior in JavaScript where **logical operators** (`&&` and `||`) stop evaluating as soon as the final result is known.
 
-
 ---
-
-
 
 ### ✅ **1. AND operator (`&&`)**
 
@@ -4822,7 +4821,7 @@ Only **one listener** handles **all list items**.
 
   <h2 style="color:green" id="what_is_event_bubbling">  What is event bubbling? </h2>
 
-<img  alt="Image" src="https://github.com/user-attachments/assets/51397783-4a7a-4dc0-8b55-228a83c6757f" />
+<img  alt="Image" src="https://github.com/user-attachments/assets/9d46063c-92cb-4fd8-96a9-bcb2fcf9535e" />
 
 **Event bubbling means that when an event happens on an element, it first runs on that element and then moves upward through all its parent elements.**
 
