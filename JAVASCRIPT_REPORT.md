@@ -610,8 +610,8 @@ Non-primitive values are **copied by reference**.
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="difference">Mutable vs Immutable  and Value Type vs Reference Type and Primitive vs Non-Primitive and Implicit Type vs Explicit Type</h2>
-Here is the **same simple explanation with icons** to make it extra clear 👇
 
+<img  alt="Image" src="https://github.com/user-attachments/assets/1ef5e840-9934-4ef3-a35e-4b1d3766951b" />
 
 ## 🔁 **Mutable vs Immutable**
 
