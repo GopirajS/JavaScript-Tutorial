@@ -20,7 +20,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 </script>
 
 
-## **🔥 Most Important JavaScript Interview Questions**
+### **🔥 Most Important JavaScript Interview Questions**
 
 ---
 
@@ -508,7 +508,6 @@ var sayHi = function () {
 
 <h2 style="color:green" id="what_is_the_typeof_operator">What is the `typeof` operator?</h2>
 
-### **8. What is the `typeof` operator?**
 
 The **`typeof` operator** in JavaScript is used to **check the data type** of a value or variable.
 It returns the type as a **string**.
@@ -540,12 +539,6 @@ typeof function () {}; // "function"
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_are_primitive_and_non_primitive_values">What are primitive and non-primitive values?</h2>
-
-### **9. What are primitive and non-primitive values?**
-
-JavaScript values are divided into **primitive** and **non-primitive** types.
-
----
 
 ### ✅ **Primitive Values(Value Types)**
 
@@ -613,7 +606,7 @@ Non-primitive values are **copied by reference**.
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/1ef5e840-9934-4ef3-a35e-4b1d3766951b" />
 
-## 🔁 **Mutable vs Immutable**
+### 🔁 **Mutable vs Immutable**
 
 ### 🟢 **Mutable (Can Change)**
 
@@ -651,7 +644,7 @@ str = str + " there"; // new string created
 
 ---
 
-## 🧩 **Value Type vs Reference Type**
+### 🧩 **Value Type vs Reference Type**
 
 ### 📘 **Value Type**
 
@@ -765,14 +758,10 @@ Boolean(1)   // true
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/6d45361c-222b-4f77-b696-60a31b68042d" />
 
-
 <span style="color:green;">================================================================ </span>
-
 
 <h2 style="color:green" id="what_is_nan">What is NaN?</h2>
 
-
-### **10. What is `NaN`?**
 
 **`NaN`** stands for **"Not-a-Number"**.
 It is a special value in JavaScript that represents an **invalid number** or the result of a **failed numeric operation**.
@@ -917,7 +906,6 @@ Some operations that would normally fail silently now throw real errors.
 
 ![Image](https://github.com/user-attachments/assets/12066d01-7ccf-434f-8988-af528d2d3964)
 
-
 ### **Difference Between Value and Reference Types**
 
 In JavaScript, data is stored in two ways: **value types** and **reference types**.
@@ -951,7 +939,6 @@ a = 20;
 
 console.log(b); // 10 (not affected)
 ```
-
 ---
 
 ### ✅ **2. Reference Types (Non-Primitive Values)**
@@ -996,9 +983,6 @@ console.log(obj2.name); // "Peter" (affected)
 
 <h2 style="color:green" id="what_is_the_use_of_semicolons_in_javascript">What is the use of semicolons in JavaScript?</h2>
 
----
-
-### **14. What is the use of semicolons in JavaScript?**
 
 In JavaScript, **semicolons (`;`) are used to mark the end of a statement**.
 
@@ -1073,8 +1057,6 @@ Ready for the next question!
 
 <h2 style="color:green" id="what_is_the_difference_between_declaration_and_initialization">What is the difference between declaration and initialization(or assignment)?</h2>
 
-### **15. What is the difference between declaration and initialization(or assignment)?**
-
 ### ✅ **1. Declaration**
 
 Declaration means **creating a variable** (telling JavaScript it exists).
@@ -1119,15 +1101,13 @@ let y = 20;
 <span style="color:green;">================================================================ </span>
 
 
-
-
 <h2 style="color:green" id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
 
 
 ![Image](https://github.com/user-attachments/assets/89f0297e-87aa-4fad-8366-644dec73b0b5)
 
 
-## ⭐ **Implicit Type Conversion (Type Coercion)**
+### ⭐ **Implicit Type Conversion (Type Coercion)**
 
 ### **Definition (Simple Answer)**
 
@@ -1168,7 +1148,7 @@ console.log("10" == 10);
 
 ---
 
-## ⭐ **Explicit Type Conversion (Type Casting)**
+### ⭐ **Explicit Type Conversion (Type Casting)**
 
 ### **Definition (Simple Answer)**
 
@@ -1211,7 +1191,6 @@ Number(false); // 0
 
 **Explicit type conversion is when the developer manually converts data types using functions like `Number()`, `String()`, or `Boolean()`.**
 
-
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
@@ -1247,7 +1226,7 @@ true && "Hello"; // "Hello"
 ---
 
 
-## ✔ **Short-Circuit for `&&` (AND)**
+### ✔ **Short-Circuit for `&&` (AND)**
 
 👉 AND stops **as soon as one condition is false**
 
@@ -1323,7 +1302,7 @@ let name = userName || "Guest";
 user && user.profile && user.profile.name;
 ```
 
-## ✔ **Short-Circuit for `||` (OR)**
+### ✔ **Short-Circuit for `||` (OR)**
 
 👉 OR stops **as soon as one condition is true**
 
@@ -1367,8 +1346,6 @@ Return c  (all false → OR returns last value)
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_is_the_difference_between_equale_and_object_is">What is the difference between `==` and `Object.is()`?</h2>
-
-### **18. What is the difference between `==` and `Object.is()`?**
 
 ### **1. `==` (Loose Equality)**
 
@@ -1551,14 +1528,6 @@ But remember:
 
 ![types of funtion](https://media.licdn.com/dms/image/v2/D4D12AQE0Jc6BcnfYJw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1695628683404?e=2147483647&v=beta&t=bt37F0S7X92xIKcvkRFWrt9v_QEUdPGI03FLoZma-VM)
 
-## ⭐ Types of Functions in JavaScript
-
-(Simple & Interview-Ready)
-
-JavaScript has many function types. Below is the **cleanest categorized list**.
-
----
-
 ### 1️⃣ **Function Declaration (Named Function)**
 
 Defined with the `function` keyword.
@@ -1727,7 +1696,7 @@ class Car {
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Type                  | Example                    | Hoisted? | Notes                  |
 | --------------------- | -------------------------- | -------- | ---------------------- |
@@ -1753,12 +1722,8 @@ class Car {
 
 ![Arrow function](https://www.devopsconsulting.in/blog/wp-content/uploads/2023/05/image-17.png)
 
-
-**Answer:**
 **Arrow functions** are a **shorter way** to write functions in JavaScript.
 They were introduced in **ES6 (ES2015)** to make code simpler and cleaner.
-
----
 
 ### 📘 **Example — Normal Function vs Arrow Function**
 
@@ -2075,7 +2040,6 @@ c(); // 3
 <span style="color:green;">================================================================ </span>
 
 <h2 style="color:green" id="what_is_lexical_scope">What is lexical scope?</h2>
-
 
 **Lexical scope** (also called **static scope**) means that the **scope of a variable is determined by where it is written in the code**, not where it is called.
 
@@ -2487,7 +2451,7 @@ All three are used to **set the value of `this`** in a function, but they differ
 
 ---
 
-## ✅ **1. `call()`**
+### ✅ **1. `call()`**
 
 ### **Calls the function immediately**
 
@@ -2511,7 +2475,7 @@ greet.call({ name: "John" }, "Hello", "World");
 
 ---
 
-## ✅ **2. `apply()`**
+### ✅ **2. `apply()`**
 
 ### **Calls the function immediately**
 
@@ -2531,7 +2495,7 @@ greet.apply({ name: "John" }, ["Hello", "World"]);
 
 ---
 
-## ✅ **3. `bind()`**
+### ✅ **3. `bind()`**
 
 ### **Does NOT call the function immediately**
 
@@ -2552,7 +2516,7 @@ newGreet("World"); // runs later
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Method      | Calls Immediately? | Arguments Format | Returns New Function? |
 | ----------- | ------------------ | ---------------- | --------------------- |
@@ -2560,9 +2524,6 @@ newGreet("World"); // runs later
 | **apply()** | ✔ Yes              | Array of args    | ✘ No                  |
 | **bind()**  | ✘ No               | Individual args  | ✔ Yes                 |
 
----
-
-If you want, I can show real-world use cases (event handlers, borrowing methods, constructors).
 
 <span style="color:green;">================================================================ </span>
 
@@ -2571,8 +2532,6 @@ If you want, I can show real-world use cases (event handlers, borrowing methods,
 <!-- <img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" /> -->
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/80e2affc-c40b-4394-8d23-ccde5fdd934e" />
-
-
 ---
 
 ### ⭐ Example
@@ -2619,8 +2578,6 @@ const search = debounce(() => {
   console.log("Search API call");
 }, 500);
 ```
-
-If user types fast, the function runs **only after 500ms** of no typing.
 
 <span style="color:green;">================================================================ </span>
 
@@ -2683,8 +2640,6 @@ Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
 <span style="color:green;">================================================================ </span>
 
-<span style="color:green;">================================================================ </span>
-
 <h2 style="color:green" id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h2>
 
 ![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
@@ -2698,7 +2653,7 @@ Microtasks always run **before** macrotasks.
 
 ---
 
-## ✅ **Microtasks**
+### ✅ **Microtasks**
 
 These are _small, fast tasks_ that should run **immediately after the current code finishes**, _before_ any rendering or other tasks.
 
@@ -2715,7 +2670,7 @@ After the current call stack is empty, **all microtasks** are executed **before 
 
 ---
 
-## ✅ **Macrotasks**
+### ✅ **Macrotasks**
 
 These are _larger asynchronous tasks_ that go into the macrotask queue.
 
@@ -2739,7 +2694,7 @@ The event loop runs:
 
 ---
 
-## ✔ Example (important!)
+### ✔ Example (important!)
 
 ```js
 console.log("Start");
@@ -2768,7 +2723,7 @@ Even with `0 ms`, `setTimeout` waits because **microtasks always have priority**
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Feature   | Microtask Queue                | Macrotask Queue               |
 | --------- | ------------------------------ | ----------------------------- |
@@ -2776,20 +2731,12 @@ Even with `0 ms`, `setTimeout` waits because **microtasks always have priority**
 | Examples  | Promises, queueMicrotask       | setTimeout, events, intervals |
 | Execution | Runs _after_ call stack clears | Runs after microtasks         |
 
----
-
-If you want, I can explain:
-
-- How event loop processes both step-by-step
-- Real interview examples
-- Trick questions involving microtasks vs macrotasks
 
 <span style="color:green;">================================================================ </span>
 
 <h1 style="text-align:center;" >Objects, Arrays, and Prototype</h1>
 
 <span style="color:green;">================================================================ </span>
-
 
 <h2 style="color:green" id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
 
@@ -2925,7 +2872,7 @@ JavaScript provides **two ways** to access object properties:
 
 ---
 
-## ✅ **1. Dot Notation (`.`)**
+### ✅ **1. Dot Notation (`.`)**
 
 **Simplest and most common** way to access properties.
 
@@ -2949,7 +2896,7 @@ console.log(user.name); // "John"
 
 ---
 
-## ✅ **2. Bracket Notation (`[]`)**
+### ✅ **2. Bracket Notation (`[]`)**
 
 Allows accessing properties **using strings or variables**.
 
@@ -2986,7 +2933,7 @@ console.log(obj["first name"]); // valid
 
 ---
 
-## ⭐ **Summary Table**
+### ⭐ **Summary Table**
 
 | Feature                    | Dot Notation | Bracket Notation   |
 | -------------------------- | ------------ | ------------------ |
@@ -3061,7 +3008,6 @@ JavaScript walks upward until it finds the property or reaches `null`.
 * It creates a **chain** of shared abilities
 
 Prototypal inheritance allows objects to inherit properties from other objects through a prototype chain, making JavaScript flexible and efficient.
-
 
 
 <span style="color:green;">================================================================ </span>
@@ -3290,9 +3236,6 @@ Used to call the parent class constructor.
 
 ES6 classes are a modern, readable syntax for creating objects and handling inheritance in JavaScript. They still use prototypes internally but make object-oriented programming much easier.
 
----
-
-Want the next question?
 
 <span style="color:green;">================================================================ </span>
 
@@ -3382,7 +3325,7 @@ Both are used to **restrict changes** to an object, but the level of restriction
 
 ---
 
-## ✅ **1. `Object.freeze()` — MOST strict**
+### ✅ **1. `Object.freeze()` — MOST strict**
 
 **You cannot:**
 
@@ -3406,10 +3349,9 @@ delete obj.a; // ❌ ignored
 
 console.log(obj); // { a: 1 }
 ```
-
 ---
 
-## ✅ **2. `Object.seal()` — PARTIALLY strict**
+### ✅ **2. `Object.seal()` — PARTIALLY strict**
 
 **You cannot:**
 
@@ -3436,7 +3378,7 @@ console.log(obj); // { a: 100 }
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Feature               | `Object.freeze()` | `Object.seal()`        |
 | --------------------- | ----------------- | ---------------------- |
@@ -3526,9 +3468,6 @@ console.log(original.b.c); // 2 🎉 (not affected)
 - `structuredClone(obj)` (best modern method)
 - Manual recursive copy function
 
----
-
-If you'd like, I can explain with diagrams or real-world analogies!
 
 <span style="color:green;">================================================================ </span>
 
@@ -3544,7 +3483,7 @@ Below are the most commonly used methods.
 
 ---
 
-## ✅ **1. Shallow Clone Methods**
+### ✅ **1. Shallow Clone Methods**
 
 ### **a) Spread operator (most common)**
 
@@ -3568,7 +3507,7 @@ const copyArr = [...arr];
 
 ---
 
-## ✅ **2. Deep Clone Methods**
+### ✅ **2. Deep Clone Methods**
 
 (Clones nested objects too)
 
@@ -3606,7 +3545,7 @@ function deepClone(obj) {
 
 ---
 
-## ✅ Summary Table
+### ✅ Summary Table
 
 | Method                         | Type    | Supports nested? | Notes              |
 | ------------------------------ | ------- | ---------------- | ------------------ |
@@ -3711,7 +3650,7 @@ console.log(rest); // [20, 30, 40]
 
 ---
 
-## ✅ **1. `slice()` — Non-destructive (does NOT change original)**
+### ✅ **1. `slice()` — Non-destructive (does NOT change original)**
 
 Used to **copy** or **extract** a part of an array.
 
@@ -3727,7 +3666,7 @@ console.log(arr); // [1, 2, 3, 4] (unchanged)
 
 ---
 
-## ✅ **2. `splice()` — Destructive (MODIFIES original array)**
+### ✅ **2. `splice()` — Destructive (MODIFIES original array)**
 
 Used to **add**, **remove**, or **replace** elements in an array.
 
@@ -3752,12 +3691,11 @@ console.log(arr); // [1, 2, 3, 4]
 
 ---
 
-## ⭐ **Summary (Easy to remember)**
+### ⭐ **Summary (Easy to remember)**
 
 - **slice = safe** → does NOT modify
 - **splice = surgery** → modifies the array
 
----
 
 <span style="color:green;">================================================================ </span>
 
@@ -3942,7 +3880,7 @@ console.log(result);
 
 ---
 
-## ⭐ Summary
+### ⭐ Summary
 
 | Method       | Best For         | Notes               |
 | ------------ | ---------------- | ------------------- |
@@ -3984,7 +3922,7 @@ console.log(users);
 
 ---
 
-## ✅ Example 2: Sort by a string property
+### ✅ Example 2: Sort by a string property
 
 Use `localeCompare()`.
 
@@ -3998,7 +3936,7 @@ console.log(items);
 
 ---
 
-## ✅ Example 3: Sort descending
+### ✅ Example 3: Sort descending
 
 ```js
 users.sort((a, b) => b.age - a.age);
@@ -4006,7 +3944,7 @@ users.sort((a, b) => b.age - a.age);
 
 ---
 
-## ✅ Example 4: Sort by multiple fields
+### ✅ Example 4: Sort by multiple fields
 
 First by `age`, then by `name`:
 
@@ -4019,7 +3957,7 @@ users.sort((a, b) => {
 
 ---
 
-## ⭐ Summary
+### ⭐ Summary
 
 - Use **`.sort()`** with a compare function.
 - Numbers → `a.prop - b.prop`
@@ -4028,7 +3966,7 @@ users.sort((a, b) => {
 
 <span style="color:green;">================================================================ </span>
 
-## ✅ What is array flattening?
+<h2 style="color:green" id="what_is_array_flattening">  ✅ What is array flattening? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/e8abffe7-c467-432a-9751-08eb8ef8455b" />
 
@@ -4048,7 +3986,7 @@ Flattened:
 
 ---
 
-## ✅ 1. `flat()` (ES2019 — BEST & simplest)
+### ✅ 1. `flat()` (ES2019 — BEST & simplest)
 
 ### **Shallow flatten (one level)**
 
@@ -4069,7 +4007,7 @@ console.log(flat); // [1, 2, 3, 4]
 
 ---
 
-## ✅ 2. Using `reduce()` + recursion
+### ✅ 2. Using `reduce()` + recursion
 
 ```js
 function flatten(arr) {
@@ -4084,7 +4022,7 @@ console.log(flatten([1, [2, [3]]]));
 
 ---
 
-## ✅ 3. Using `JSON` trick (not recommended)
+### ✅ 3. Using `JSON` trick (not recommended)
 
 ```js
 JSON.parse("[" + arr.toString() + "]");
@@ -4094,7 +4032,7 @@ JSON.parse("[" + arr.toString() + "]");
 
 ---
 
-## ⭐ Summary
+### ⭐ Summary
 
 - **Array flattening** → turning nested arrays into a single-level array.
 - **Best method**: `arr.flat(Infinity)`
@@ -4157,7 +4095,7 @@ Sure! Here is a **much bigger and clearer DOM tree visualization** so you fully 
 
 ---
 
-## 🔍 **Example HTML**
+### 🔍 **Example HTML**
 
 ```html
 <!DOCTYPE html>
@@ -4178,7 +4116,7 @@ Sure! Here is a **much bigger and clearer DOM tree visualization** so you fully 
 
 ---
 
-## 🔍 **DOM Tree Visualization (More Detailed)**
+### 🔍 **DOM Tree Visualization (More Detailed)**
 
 ```
 Document
@@ -4198,7 +4136,7 @@ Document
 
 ---
 
-## 🔍 Even Bigger Diagram With Node Types
+### 🔍 Even Bigger Diagram With Node Types
 
 ```
 Document
@@ -4218,7 +4156,7 @@ Document
 
 ---
 
-## ⭐ What this visualization shows:
+### ⭐ What this visualization shows:
 
 - Every HTML tag becomes a **node** in the DOM tree.
 - Text inside tags becomes **text nodes**.
@@ -4242,7 +4180,7 @@ These three properties all deal with **reading or changing content** inside an e
 
 ---
 
-## 🔹 **1. `textContent`** (FASTEST & RAW text)
+### 🔹 **1. `textContent`** (FASTEST & RAW text)
 
 ### ✔ Returns **all text**, including hidden text
 
@@ -4270,7 +4208,7 @@ console.log(element.textContent); // "Hi" (even though it's hidden)
 
 ---
 
-## 🔹 **2. `innerText`** (VISIBLE text only)
+### 🔹 **2. `innerText`** (VISIBLE text only)
 
 ### ✔ Returns **only visible text**
 
@@ -4296,7 +4234,7 @@ console.log(element.innerText); // "" (empty, because it's hidden)
 
 ---
 
-## 🔹 **3. `innerHTML`** (HTML markup)
+### 🔹 **3. `innerHTML`** (HTML markup)
 
 ### ✔ Returns/sets **HTML + tags**
 
@@ -4316,7 +4254,7 @@ Hello   ← bold text
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Property        | Returns      | Respects CSS? | Shows hidden text? | Accepts HTML? |
 | --------------- | ------------ | ------------- | ------------------ | ------------- |
@@ -4326,7 +4264,7 @@ Hello   ← bold text
 
 ---
 
-## ⭐ Easy way to remember
+### ⭐ Easy way to remember
 
 - **textContent → raw text**
 - **innerText → visible text**
@@ -4341,7 +4279,7 @@ They can be grouped into **modern** and **traditional** methods.
 
 ---
 
-## 🔹 **1. Modern Selectors (Recommended)**
+### 🔹 **1. Modern Selectors (Recommended)**
 
 ### ✔ `document.querySelector()`
 
@@ -4371,7 +4309,7 @@ document.querySelectorAll("p").forEach((p) => console.log(p));
 
 ---
 
-## 🔹 **2. Traditional Selectors**
+### 🔹 **2. Traditional Selectors**
 
 ### ✔ `document.getElementById()`
 
@@ -4413,7 +4351,7 @@ document.getElementsByName("email");
 
 ---
 
-## ⭐ Summary Table
+### ⭐ Summary Table
 
 | Method                     | Returns                | CSS Selector Support | Live? |
 | -------------------------- | ---------------------- | -------------------- | ----- |
@@ -4432,17 +4370,11 @@ document.getElementsByName("email");
 
 ---
 
-## ⭐ Best Practice
+### ⭐ Best Practice
 
 Use **querySelector** and **querySelectorAll** for almost everything.
 Use `getElementById` only when you know the element has a unique ID.
 
----
-
-If you want, I can also explain:
-✔ DOM traversal (parent, children, siblings)
-✔ Differences between NodeList vs HTMLCollection
-✔ Selecting with jQuery equivalents (`$('#id')`)
 
 <span style="color:green;">================================================================ </span>
 
@@ -4452,7 +4384,7 @@ You can create DOM elements using JavaScript with three main steps:
 
 ---
 
-## 🔹 **1. Create the element**
+### 🔹 **1. Create the element**
 
 ```js
 const div = document.createElement("div");
@@ -4460,7 +4392,7 @@ const div = document.createElement("div");
 
 ---
 
-## 🔹 **2. Add content or attributes**
+### 🔹 **2. Add content or attributes**
 
 ```js
 div.textContent = "Hello World";
@@ -4476,7 +4408,7 @@ div.innerHTML = "<b>Hello</b>";
 
 ---
 
-## 🔹 **3. Insert it into the document**
+### 🔹 **3. Insert it into the document**
 
 ```js
 document.body.appendChild(div);
@@ -4484,7 +4416,7 @@ document.body.appendChild(div);
 
 ---
 
-## ✅ Full Example
+### ✅ Full Example
 
 ```js
 const btn = document.createElement("button");
@@ -4496,7 +4428,7 @@ document.body.appendChild(btn);
 
 ---
 
-## 🔹 Adding elements inside a specific container
+### 🔹 Adding elements inside a specific container
 
 ```js
 const li = document.createElement("li");
@@ -4507,7 +4439,7 @@ document.querySelector("ul").appendChild(li);
 
 ---
 
-## 🔹 Using `append()` (can insert multiple items)
+### 🔹 Using `append()` (can insert multiple items)
 
 ```js
 container.append("Text", div, anotherElement);
@@ -4515,7 +4447,7 @@ container.append("Text", div, anotherElement);
 
 ---
 
-## 🔹 Using `prepend()` (insert at the top)
+### 🔹 Using `prepend()` (insert at the top)
 
 ```js
 container.prepend(div);
@@ -4523,7 +4455,7 @@ container.prepend(div);
 
 ---
 
-## 🔹 Insert before or after a specific element
+### 🔹 Insert before or after a specific element
 
 ```js
 container.insertBefore(newElement, existingElement);
@@ -4533,7 +4465,7 @@ existingElement.before(newElement);
 
 ---
 
-## ⭐ Extra: Create + Add + Style in one go
+### ⭐ Extra: Create + Add + Style in one go
 
 ```js
 const card = document.createElement("div");
@@ -4546,7 +4478,7 @@ document.body.append(card);
 
 ---
 
-## ⭐ Summary
+### ⭐ Summary
 
 To create elements dynamically:
 
@@ -4568,7 +4500,7 @@ If you want, I can show:
 
 ![Image](https://github.com/user-attachments/assets/9b30f497-5c4c-465c-8c87-e659faedb713)
 
-## ✅ **What is Event Propagation?**
+### ✅ **What is Event Propagation?**
 
 **Event propagation** is the way an event travels through the DOM (HTML elements).
 
@@ -4634,7 +4566,7 @@ Window ------------------------↑
 
 ---
 
-## ⭐ Simple Example of Event Propagation
+### ⭐ Simple Example of Event Propagation
 
 ```html
 <div id="parent" style="padding:20px; background:orange;">
@@ -4664,7 +4596,7 @@ Because the event **bubbles upward** from button → div.
 
 ---
 
-## ✅ **What is Event Delegation?**
+### ✅ **What is Event Delegation?**
 
 **Event Delegation = Parent handles the events of children**
 Instead of adding event listener to every child.
@@ -4700,7 +4632,7 @@ Parent (Table)
 
 ---
 
-## ✔ Simple Event Delegation Example
+### ✔ Simple Event Delegation Example
 
 ### ❌ Without Delegation (BAD)
 
@@ -4730,7 +4662,7 @@ Only **one listener** handles **all list items**.
 
 ---
 
-## ⭐ Why Event Delegation is Useful?
+### ⭐ Why Event Delegation is Useful?
 
 | Problem                            | Solution                    |
 | ---------------------------------- | --------------------------- |
@@ -4740,7 +4672,7 @@ Only **one listener** handles **all list items**.
 
 ---
 
-## ⭐ Full Interview Answer (Short)
+### ⭐ Full Interview Answer (Short)
 
 **Event propagation** is how events travel through the DOM:
 
@@ -4749,7 +4681,6 @@ Only **one listener** handles **all list items**.
 * bubbling (down → up)
 
 **Event delegation** uses bubbling: a parent handles events for children using `event.target`.
-
 
 <span style="color:green;">================================================================ </span>
 
@@ -4761,7 +4692,7 @@ Only **one listener** handles **all list items**.
 
 ---
 
-## 🔍 Example HTML
+### 🔍 Example HTML
 
 ```html
 <div id="parent">
@@ -4771,7 +4702,7 @@ Only **one listener** handles **all list items**.
 
 ---
 
-## 🔍 Bubbling Flow (if button is clicked)
+### 🔍 Bubbling Flow (if button is clicked)
 
 ```
 button ➜ div ➜ body ➜ html ➜ document
@@ -4781,7 +4712,7 @@ The event moves **upwards**.
 
 ---
 
-## 🔥 Example Code
+### 🔥 Example Code
 
 ```js
 document.getElementById("parent").addEventListener("click", () => {
@@ -4802,7 +4733,7 @@ Parent clicked   // because of bubbling
 
 ---
 
-## ⭐ Key points
+### ⭐ Key points
 
 - Events **bubble upward** from child → parent.
 - Most events bubble (e.g., click, input).
@@ -4814,11 +4745,9 @@ event.stopPropagation();
 
 ---
 
-## ⭐ Easy way to remember
+### ⭐ Easy way to remember
 
 > Event bubbling = **bubble goes UP**.
-
----
 
 <span style="color:green;">================================================================ </span>
 
@@ -4834,7 +4763,7 @@ In capturing, the event starts at the **top parent** and moves **downward** to t
 
 ---
 
-## 🔍 Event flow (capturing phase)
+### 🔍 Event flow (capturing phase)
 
 ```
 document ➜ html ➜ body ➜ parent ➜ target
@@ -4842,7 +4771,7 @@ document ➜ html ➜ body ➜ parent ➜ target
 
 ---
 
-## 🔍 How to use capturing in JavaScript
+### 🔍 How to use capturing in JavaScript
 
 You enable capturing by passing `true` as the third parameter:
 
@@ -4852,13 +4781,9 @@ element.addEventListener("click", handler, true);
 
 This runs the event handler **during capturing**, not bubbling.
 
----
-
-If you want, I can explain the **full event flow (capturing → target → bubbling)** in simple terms.
-
 <span style="color:green;">================================================================ </span>
 
- <h2 style="color:green" id="what_is_event_delegation">  What is event delegation? </h2>
+<h2 style="color:green" id="what_is_event_delegation">  What is event delegation? </h2>
 
 **Event delegation is a technique where you add ONE event listener to a parent element instead of adding separate listeners to many child elements.**
 
@@ -4866,7 +4791,7 @@ The parent listens for events that **bubble up** from its children.
 
 ---
 
-## 🔹 **Why does it work?**
+### 🔹 **Why does it work?**
 
 Because events **bubble up** from the clicked element to its parent.
 
@@ -4880,7 +4805,7 @@ The parent can detect which child triggered the event.
 
 ---
 
-## 🔹 **Simple Example**
+### 🔹 **Simple Example**
 
 ### ❌ Without event delegation (many listeners)
 
@@ -4902,7 +4827,7 @@ document.querySelector("ul").addEventListener("click", function (e) {
 
 ---
 
-## 🔹 **Why use event delegation?**
+### 🔹 **Why use event delegation?**
 
 ### ✔ 1. Fewer event listeners → Better performance
 
@@ -4914,7 +4839,7 @@ document.querySelector("ul").addEventListener("click", function (e) {
 
 ---
 
-## 🔹 **Simple Sentence Explanation**
+### 🔹 **Simple Sentence Explanation**
 
 **Event delegation means placing one event listener on a parent element so it can handle events from all its children using event bubbling.**
 
@@ -4922,13 +4847,13 @@ document.querySelector("ul").addEventListener("click", function (e) {
 
 <h2 style="color:green" id="what_is_preventdefault">  What is `preventDefault()`? </h2>
 
-## ✅ **Super Simple Explanation of `preventDefault()`**
+### ✅ **Super Simple Explanation of `preventDefault()`**
 
 **`preventDefault()` means: “Browser, don’t do your normal behavior.”**
 
 ---
 
-## 🔹 **Example that makes it very easy**
+### 🔹 **Example that makes it very easy**
 
 ### 👉 When you click a link `<a>`, the browser **normally opens another page**.
 
@@ -4942,7 +4867,7 @@ link.addEventListener("click", function (e) {
 
 ---
 
-## 🔹 Another simple example
+### 🔹 Another simple example
 
 ### 👉 When you submit a form, the browser **normally reloads the page**.
 
@@ -4956,11 +4881,10 @@ form.addEventListener("submit", function (e) {
 
 ---
 
-## 🔹 **One-line simple meaning**
+### 🔹 **One-line simple meaning**
 
 **`preventDefault()` tells the browser: “Don’t do what you normally do for this event.”**
 
----
 
 <span style="color:green;">================================================================ </span>
 
@@ -5024,7 +4948,7 @@ button.addEventListener("click", function (e) {
 
 ---
 
-## 🔍 Super Simple Example
+### 🔍 Super Simple Example
 
 HTML:
 
@@ -5045,7 +4969,7 @@ document.getElementById("box").addEventListener("click", function (e) {
 
 ---
 
-## 🔹 Simple One-Line Difference
+### 🔹 Simple One-Line Difference
 
 **`target` = where the event started**
 **`currentTarget` = who is listening for the event**
@@ -5058,13 +4982,13 @@ document.getElementById("box").addEventListener("click", function (e) {
 
 ---
 
-## 🔹 Simple meaning
+### 🔹 Simple meaning
 
 **It “listens” for an event and then does something.**
 
 ---
 
-## 🔹 Example
+### 🔹 Example
 
 ```js
 button.addEventListener("click", function () {
@@ -5077,7 +5001,7 @@ button.addEventListener("click", function () {
 
 ---
 
-## 🔹 One-line definition
+### 🔹 One-line definition
 
 **A DOM event listener waits for an event and runs a function when that event occurs.**
 
@@ -5097,7 +5021,7 @@ A `<video>` element has its own buttons, timeline, controls — that is a Shadow
 
 ---
 
-## ✅ **Virtual DOM (Very Simple Explanation)**
+### ✅ **Virtual DOM (Very Simple Explanation)**
 
 **Virtual DOM is a lightweight copy of the real DOM used by libraries like React to update the UI faster.**
 
@@ -5109,7 +5033,7 @@ Instead of changing the real DOM directly, React updates the virtual version fir
 
 ---
 
-## ✅ **Super Simple Comparison**
+### ✅ **Super Simple Comparison**
 
 | Feature      | Shadow DOM                  | Virtual DOM                 |
 | ------------ | --------------------------- | --------------------------- |
@@ -5126,13 +5050,13 @@ Instead of changing the real DOM directly, React updates the virtual version fir
 
 ---
 
-## 🔹 Simple meaning
+### 🔹 Simple meaning
 
 **`dataset` allows you to read and write custom data stored in HTML elements.**
 
 ---
 
-## 🔹 Example in HTML
+### 🔹 Example in HTML
 
 ```html
 <button id="btn" data-user="john" data-id="123">Click me</button>
@@ -5140,7 +5064,7 @@ Instead of changing the real DOM directly, React updates the virtual version fir
 
 ---
 
-## 🔹 How to access it in JavaScript
+### 🔹 How to access it in JavaScript
 
 ```js
 const btn = document.getElementById("btn");
@@ -5151,7 +5075,7 @@ console.log(btn.dataset.id); // "123"
 
 ---
 
-## 🔹 How to change values
+### 🔹 How to change values
 
 ```js
 btn.dataset.user = "mike";
@@ -5159,7 +5083,7 @@ btn.dataset.user = "mike";
 
 ---
 
-## 🔹 One-line definition
+### 🔹 One-line definition
 
 **`dataset` gives you easy access to HTML attributes that start with `data-`.**
 
@@ -5780,9 +5704,9 @@ onmessage = function (event) {
 
 <span style="color:green;">================================================================ </span>
 
- <h2 style="color:green" id="what_is_a_service_worker"> What is a Service Worker?</h2>
+<h2 style="color:green" id="what_is_a_service_worker"> What is a Service Worker?</h2>
 
- ![Image](https://github.com/user-attachments/assets/1f372e1e-2f9a-4390-9691-c27bcf7d64ff)
+![Image](https://github.com/user-attachments/assets/1f372e1e-2f9a-4390-9691-c27bcf7d64ff)
 
 A **Service Worker** is a background script in the browser that runs **separately from the main webpage** and allows features like:
 
@@ -5915,13 +5839,13 @@ SOP protects users by stopping malicious websites from stealing sensitive data.
 
 ---
 
-## 👉 **Short Interview Version**
+### 👉 **Short Interview Version**
 
 “Same Origin Policy is a browser security mechanism that blocks scripts from one website from reading or interacting with content from another website unless both sites share the same protocol, domain, and port. It prevents cross-site attacks like data theft.”
 
 ---
 
-## ✅ **Simple Example (Easy to Understand)**
+### ✅ **Simple Example (Easy to Understand)**
 
 Imagine you are logged into your bank:
 
@@ -5947,7 +5871,7 @@ So the browser says:
 
 ---
 
-## 🧠 **Bonus (1 sentence for interview)**
+### 🧠 **Bonus (1 sentence for interview)**
 
 SOP protects users from attacks like **XSS**, **CSRF**, and unauthorized data access.
 
@@ -6154,7 +6078,6 @@ console.log(`Total: ${a + b}`);
 **Template literals are strings written using backticks that allow variable interpolation, multiline strings, and embedded expressions using `${ }`.**
 
 <span style="color:green;">================================================================ </span>
-
 
 <h2 style="color:green" id="what_is_a_set">  What is a `Set`?  </h2>
 
@@ -6411,10 +6334,6 @@ obj1 = null; // remove reference
 
 <span style="color:green;">================================================================ </span>
 
-<span style="color:green;">================================================================ </span>
-
-<span style="color:green;">================================================================ </span>
-
 <h2 style="color:green" id="what_are_modules_in_javascript">  What are modules in JavaScript?  </h2>
 
 
@@ -6437,7 +6356,7 @@ Modules help keep code organized, prevent global variable pollution, and allow s
 ---
 
 
-## ✅ **1. Exporting from a module**
+### ✅ **1. Exporting from a module**
 
 ### ✔ Named export
 
@@ -6459,7 +6378,7 @@ export default function multiply(a, b) {
 
 ---
 
-## ✅ **2. Importing a module**
+### ✅ **2. Importing a module**
 
 ### ✔ Import named export
 
@@ -6481,7 +6400,7 @@ console.log(multiply(2, 3)); // 6
 
 ---
 
-## ⭐ Browser Example (ES Modules)
+### ⭐ Browser Example (ES Modules)
 
 ```html
 <script type="module" src="app.js"></script>
@@ -6489,7 +6408,7 @@ console.log(multiply(2, 3)); // 6
 
 ---
 
-## ⭐ Important Interview Points
+### ⭐ Important Interview Points
 
 * JavaScript modules use **import/export syntax (ES6)**
 * They run in **strict mode** automatically
@@ -6498,10 +6417,9 @@ console.log(multiply(2, 3)); // 6
 
 ---
 
-## ⭐ One-line interview version
+### ⭐ One-line interview version
 
 **Modules in JavaScript are files that export and import code so it can be reused, organized, and kept separate from the global scope.**
-
 
 
 <span style="color:green;">================================================================ </span>
@@ -6515,7 +6433,7 @@ JavaScript modules allow you to export code in **two ways**:
 
 ---
 
-## ✅ **1. Named Exports**
+### ✅ **1. Named Exports**
 
 ### ✔ You can export **multiple** things
 
@@ -6541,7 +6459,7 @@ import { PI, add } from './utils.js';
 
 ---
 
-## ✅ **2. Default Export**
+### ✅ **2. Default Export**
 
 ### ✔ Only **one default export** per file
 
@@ -6566,7 +6484,7 @@ import m from './utils.js'; // "m" can be any name
 
 ---
 
-## ⭐ **Key Differences Table**
+### ⭐ **Key Differences Table**
 
 | Feature        | Named Export               | Default Export             |
 | -------------- | -------------------------- | -------------------------- |
@@ -6577,10 +6495,9 @@ import m from './utils.js'; // "m" can be any name
 
 ---
 
-## ⭐ One-line interview answer
+### ⭐ One-line interview answer
 
 **Named exports allow exporting multiple specific items, while default exports allow exporting a single main value that can be imported with any name.**
-
 
 
 <span style="color:green;">================================================================ </span>
@@ -6836,9 +6753,5 @@ console.log(data?.[0]);
 **Optional chaining lets you safely access deeply-nested properties without errors by returning `undefined` when a value is null or undefined.**
 
 
-
-<span style="color:green;">================================================================ </span>
-
-<span style="color:green;">================================================================ </span>
 
 <span style="color:green;">================================================================ </span>
