@@ -2143,12 +2143,7 @@ function outer() {
 
 <span style="color:green;">================================================================ </span>
 
-
-Here is the **clearest and simplest explanation** of **Lexical Scope** and **Closure** in JavaScript — explained like you’re teaching a small kid 🍬😊
-
----
-
-## ⭐ What is **Lexical Scope**?
+<h2 style="color:green" id="what_is_an_iife">⭐ What is Lexical Scope?</h2>
 
 ### ✔ Short answer
 
