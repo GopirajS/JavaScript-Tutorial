@@ -2147,6 +2147,7 @@ function outer() {
 
 ![IIFE](https://media.licdn.com/dms/image/v2/D4E22AQGGQAKmr7TMLg/feedshare-shrink_800/B4EZjkq0D.IMAg-/0/1756183086896?e=2147483647&v=beta&t=x4PrVtKEYhpoilpkAolizx8tvaXFbpy3qJkawNA3xuo)
 
+
 An **IIFE** stands for **Immediately Invoked Function Expression**.
 
 It is a function that is:
