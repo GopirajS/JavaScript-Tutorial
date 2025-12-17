@@ -149,6 +149,9 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [What is array flattening?](#what_is_array_flattening)
 
+- Difference between for...in and for...of
+- How does garbage collection work?
+
 ### 4. DOM & Browser (15 Questions)**
 
 - [What is the DOM?](#what_is_the_dom)
@@ -236,29 +239,48 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 -  [What is optional chaining?](#what_is_optional_chaining)
 
+-  What is Proxy?
+
+-  What is Symbol and use cases?
+
 -  What is top-level await?
+
 -  What are private class fields?
+
 -  What are static class methods?
+
 -  What are logical assignment operators?
 
 
 
 ### **7. Error Handling, Security & Performance (15 Questions)**
 
--  What is try/catch?
--  How do you throw custom errors?
--  What are types of JavaScript errors?
--  What causes memory leaks in JS?
--  How to prevent memory leaks?
--  What is debouncing used for?
--  What is throttling used for?
--  What is XSS?
--  How do you prevent XSS in JavaScript?
+-  What is XSS. How do you prevent XSS in JavaScript?
+
 -  What is CSRF?
+
 -  What is CSP (Content Security Policy)?
+
+-  What are types of JavaScript errors?
+
+-  How do you throw custom errors?
+
+-  What causes memory leaks in JS?
+
+-  How to prevent memory leaks?
+
+-  What is debouncing used for?
+
+-  What is throttling used for?
+
 -  What is lazy loading?
+
 -  What is code splitting?
+
 -  What is minification?
+
+-  What is try/catch?
+
 -  How do you optimize JS performance?
 
 
@@ -2041,7 +2063,10 @@ c(); // 3
 
 <h2 style="color:green" id="what_is_lexical_scope">What is lexical scope?</h2>
 
-**Lexical scope** (also called **static scope**) means that the **scope of a variable is determined by where it is written in the code**, not where it is called.
+<img  alt="Image" src="https://github.com/user-attachments/assets/1b1bc4bf-dd46-4bb1-88a6-5c8ca3265ab9" />
+
+Lexical scope means that variable access is determined by where the code is written (its position in the source code), not by where it is called.
+
 
 In simple terms:
 
