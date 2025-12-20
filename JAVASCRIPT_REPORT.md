@@ -152,7 +152,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 - Difference between for...in and for...of
 - How does garbage collection work?
 
-### 4. DOM & Browser (15 Questions)**
+### DOM & Browser
 
 - [What is the DOM?](#what_is_the_dom)
 
@@ -183,7 +183,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 - [What is `dataset` in HTML?](#what_is_dataset_in_html)
 
 
-### 5. Asynchronous JavaScript**
+### Asynchronous JavaScript
 
 - [What is AJAX?](#what_is_ajax)
 
@@ -253,7 +253,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 
 
-### **7. Error Handling, Security & Performance (15 Questions)**
+### Error Handling, Security & Performance
 
 -  What is XSS. How do you prevent XSS in JavaScript?
 
@@ -3724,7 +3724,11 @@ console.log(arr); // [1, 2, 3, 4]
 
 <span style="color:green;">================================================================ </span>
 
-<h2 style="color:green" id="what_is_the_difference_between_methods"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
+<h2 style="color:green" id="difference_between_map_foreach_filter_and_reduce"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
+
+![Screenshot 1](javascript_learning/imges/js-map.jpg)
+
+
 
 ### 🧩 1. **`forEach()`**
 
