@@ -28,11 +28,11 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 | Term           | Text Icon / Emoji |
 | -------------- | ----------------- |
-| **Concept**    | 💡                |
-| **Features**   | ⭐ / ⚙️           |
-| **Techniques** | 🛠️                |
-| **Mechanism**  | 🔧 / ⚙️           |
-| **Behavior**   | 🧠 / 📊           |
+| **Concept**    | 💡                 |
+| **Features**   | ⭐ / ⚙️             |
+| **Techniques** | 🛠️                 |
+| **Mechanism**  | 🔧 / ⚙️             |
+| **Behavior**   | 🧠 / 📊             |
 
 ---
 
@@ -135,7 +135,7 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 
 - [How do you clone an object?](#how_do_you_clone_an_object)
 
-- [What is destructuring?](#what_is_destructuring)
+-  What is destructuring?
 
 - [What are Spread and Rest Operators in JavaScript?](#what_are_spread_and_rest_operators_in_javascript)
 
@@ -284,14 +284,14 @@ document.querySelector('#backToTop').addEventListener('click', function(e) {
 -  How do you optimize JS performance?
 
 
-  <span style="color:green;">================================================================ </span>
+  <hr style="border: 2px solid green;">
 
   <h1 style="text-align:center;" >JavaScript Basics</h1>
 
-  <span style="color:green;">================================================================ </span>
+  <hr style="border: 2px solid green;">
 
 
-<h2 style="color:green" id="what_is_javascript">What is JavaScript?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_javascript">What is JavaScript?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/450e3187-c6a3-40e5-9ab6-c0f10a479832" />
 
@@ -307,9 +307,9 @@ Here’s the simple breakdown:
 - **One of the core technologies of the web**, used almost everywhere.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_javascript_data_types">What are JavaScript data types?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_javascript_data_types">What are JavaScript data types?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/97458b53-5ea6-4ecf-9ea5-2e60c50e6efc" />
 
@@ -383,9 +383,9 @@ These hold a **single value** and are **immutable**.
 
 Arrays, functions, dates—all are technically **objects**.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_var_let_and_const">What is the difference between `var`, `let`, and `const`?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_var_let_and_const">What is the difference between `var`, `let`, and `const`?</h2>
 
 Here’s a clear and simple explanation of the differences between **`var`**, **`let`**, and **`const`** in JavaScript:
 
@@ -401,10 +401,10 @@ Here’s a clear and simple explanation of the differences between **`var`**, **
 
 ### ✅ **2. Reassignment**
 
-| Keyword   | Reassign Value?                          |
-| --------- | ---------------------------------------- |
-| **var**   | ✔ Yes                                    |
-| **let**   | ✔ Yes                                    |
+| Keyword   | Reassign Value?                         |
+| --------- | --------------------------------------- |
+| **var**   | ✔ Yes                                   |
+| **let**   | ✔ Yes                                   |
 | **const** | ❌ No (but object contents _can_ change) |
 
 Example for `const` object:
@@ -419,9 +419,9 @@ user = {}; // ❌ not allowed
 
 ### ✅ **3. Hoisting Behavior**
 
-| Keyword   | Hoisted? | Usable Before Declaration?          |
-| --------- | -------- | ----------------------------------- |
-| **var**   | ✔ Yes    | ✔ Allowed (value = undefined)       |
+| Keyword   | Hoisted? | Usable Before Declaration?         |
+| --------- | -------- | ---------------------------------- |
+| **var**   | ✔ Yes    | ✔ Allowed (value = undefined)      |
 | **let**   | ✔ Yes    | ❌ Not allowed (Temporal Dead Zone) |
 | **const** | ✔ Yes    | ❌ Not allowed (TDZ)                |
 
@@ -443,9 +443,9 @@ let b = 20;
 - **Use `const`** for values that should not change.
 - **Avoid `var`** in modern JavaScript (causes unexpected behavior).
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_hoisting">What is hoisting?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_hoisting">What is hoisting?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/31f790cc-60a6-4d6d-8992-ed07b98bc9dc" />
 
@@ -520,15 +520,15 @@ var sayHi = function () {
 | Type                 | Hoisted?            | Usable Before Declaration? |
 | -------------------- | ------------------- | -------------------------- |
 | `var`                | ✔ Yes               | ✔ Yes (value = undefined)  |
-| `let`                | ✔ Yes               | ❌ No (TDZ)                |
-| `const`              | ✔ Yes               | ❌ No (TDZ)                |
+| `let`                | ✔ Yes               | ❌ No (TDZ)                 |
+| `const`              | ✔ Yes               | ❌ No (TDZ)                 |
 | Function Declaration | ✔ Yes               | ✔ Yes                      |
-| Function Expression  | ✔ Yes (as variable) | ❌ No                      |
+| Function Expression  | ✔ Yes (as variable) | ❌ No                       |
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_typeof_operator">What is the `typeof` operator?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_typeof_operator">What is the `typeof` operator?</h2>
 
 
 The **`typeof` operator** in JavaScript is used to **check the data type** of a value or variable.
@@ -558,9 +558,9 @@ typeof function () {}; // "function"
 
 ---
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_primitive_and_non_primitive_values">What are primitive and non-primitive values?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_primitive_and_non_primitive_values">What are primitive and non-primitive values?</h2>
 
 ### ✅ **Primitive Values(Value Types)**
 
@@ -622,9 +622,9 @@ Non-primitive values are **copied by reference**.
 | Copied as | Value copy   | Reference copy                    |
 | Types     | 7 primitives | Objects (arrays, functions, etc.) |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference">Mutable vs Immutable  and Value Type vs Reference Type and Primitive vs Non-Primitive and Implicit Type vs Explicit Type</h2>
+<h2 style="color:green; text-align:center;" id="difference">Mutable vs Immutable  and Value Type vs Reference Type and Primitive vs Non-Primitive and Implicit Type vs Explicit Type</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/1ef5e840-9934-4ef3-a35e-4b1d3766951b" />
 
@@ -762,8 +762,8 @@ Boolean(1)   // true
 
 ### 🧠 **Quick Cheat Sheet**
 
-| Concept        | Icon  | Meaning           |
-| -------------- | ----- | ----------------- |
+| Concept        | Icon | Meaning           |
+| -------------- | ---- | ----------------- |
 | Mutable        | 🔁    | Can change        |
 | Immutable      | 🛑    | Cannot change     |
 | Value Type     | 📘    | Stored directly   |
@@ -771,18 +771,18 @@ Boolean(1)   // true
 | Primitive      | 🔹    | Simple, immutable |
 | Non-Primitive  | 🔸    | Objects, mutable  |
 | Implicit Type  | 🤖    | Auto conversion   |
-| Explicit Type  | 🧑‍💻 | Manual conversion |
+| Explicit Type  | 🧑‍💻    | Manual conversion |
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="variable_declaration_vs_assignment_vs_initialization">variable declaration vs assignment vs initialization in javascript</h2>
+<h2 style="color:green; text-align:center;" id="variable_declaration_vs_assignment_vs_initialization">variable declaration vs assignment vs initialization in javascript</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/6d45361c-222b-4f77-b696-60a31b68042d" />
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_nan">What is NaN?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_nan">What is NaN?</h2>
 
 
 **`NaN`** stands for **"Not-a-Number"**.
@@ -843,9 +843,9 @@ Number.isNaN(value);
 - It never equals itself.
 - Use `Number.isNaN()` to check it safely.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_strict_mode">What is strict mode?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_strict_mode">What is strict mode?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/825121f6-7f2e-42fc-ab37-d40c69f4c18a" /> 
 
@@ -921,9 +921,9 @@ Some operations that would normally fail silently now throw real errors.
 - Helps catch bugs earlier.
 - Blocks bad syntax and unsafe actions.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_value_and_reference_types">What is the difference between `value` and `reference` types?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_value_and_reference_types">What is the difference between `value` and `reference` types?</h2>
 
 
 ![Image](https://github.com/user-attachments/assets/12066d01-7ccf-434f-8988-af528d2d3964)
@@ -1001,9 +1001,9 @@ console.log(obj2.name); // "Peter" (affected)
 
 ---
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_use_of_semicolons_in_javascript">What is the use of semicolons in JavaScript?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_use_of_semicolons_in_javascript">What is the use of semicolons in JavaScript?</h2>
 
 
 In JavaScript, **semicolons (`;`) are used to mark the end of a statement**.
@@ -1075,9 +1075,9 @@ let b = a;
 
 Ready for the next question!
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_declaration_and_initialization">What is the difference between declaration and initialization(or assignment)?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_declaration_and_initialization">What is the difference between declaration and initialization(or assignment)?</h2>
 
 ### ✅ **1. Declaration**
 
@@ -1120,10 +1120,10 @@ let y = 20;
 | **Initialization** | Giving it a value     | `a = 5;`     |
 | **Both together**  | Declare + initialize  | `let a = 5;` |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
 
-<h2 style="color:green" id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
+<h2 style="color:green; text-align:center;" id="Implicit_and_Explicit_Type_Conversion" > Implicit Type Conversion (Type Coercion) and Explicit Type Conversion ? </h2>
 
 
 ![Image](https://github.com/user-attachments/assets/89f0297e-87aa-4fad-8366-644dec73b0b5)
@@ -1213,9 +1213,9 @@ Number(false); // 0
 
 **Explicit type conversion is when the developer manually converts data types using functions like `Number()`, `String()`, or `Boolean()`.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_short_circuit_evaluation">What is short-circuit evaluation?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/4b79ebd3-db5e-4b08-84b1-f8d71fff460c" />
 
@@ -1365,9 +1365,9 @@ Return c  (all false → OR returns last value)
 ---
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_equale_and_object_is">What is the difference between `==` and `Object.is()`?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_equale_and_object_is">What is the difference between `==` and `Object.is()`?</h2>
 
 ### **1. `==` (Loose Equality)**
 
@@ -1411,9 +1411,9 @@ Object.is(true, true); // true
 
 | Feature         | `==`        | `Object.is()`           |
 | --------------- | ----------- | ----------------------- |
-| Type coercion?  | ✔ Yes       | ❌ No                   |
-| NaN equals NaN? | ❌ No       | ✔ Yes                   |
-| 0 equals -0?    | ✔ Yes       | ❌ No                   |
+| Type coercion?  | ✔ Yes       | ❌ No                    |
+| NaN equals NaN? | ❌ No        | ✔ Yes                   |
+| 0 equals -0?    | ✔ Yes       | ❌ No                    |
 | Accuracy        | Low (loose) | Very high               |
 | Best for        | Never use   | Checking exact equality |
 
@@ -1424,9 +1424,9 @@ Object.is(true, true); // true
 - `==` → loose equality (with type conversion)
 - `Object.is()` → strict, accurate equality (even better than `===` in edge cases)
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_scope_in_javascript"> What is Scope in JavaScript?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2a1a5304-bda7-4ec1-b208-716fea4691a5" />
 
@@ -1542,11 +1542,11 @@ But remember:
 ---
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 <h1 style="text-align:center;" >Functions & Execution</h1>
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green"  id="types_of_the_functions"> Types of Functions in JavaScript</h2>
+<h2 style="color:green; text-align:center;"  id="types_of_the_functions"> Types of Functions in JavaScript</h2>
 
 ![types of funtion](https://media.licdn.com/dms/image/v2/D4D12AQE0Jc6BcnfYJw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1695628683404?e=2147483647&v=beta&t=bt37F0S7X92xIKcvkRFWrt9v_QEUdPGI03FLoZma-VM)
 
@@ -1738,9 +1738,9 @@ class Car {
 ---
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_an_arrow_function">  What is an arrow function? </h2>
+ <h2 style="color:green; text-align:center;" id="what_is_an_arrow_function">  What is an arrow function? </h2>
 
 ![Arrow function](https://www.devopsconsulting.in/blog/wp-content/uploads/2023/05/image-17.png)
 
@@ -1807,9 +1807,9 @@ they take it from the outer (global) scope.
 > **Arrow functions** are **shorter and simpler** function syntax introduced in ES6,
 > but they **don’t have their own `this`, `arguments`, or `prototype`.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_a_function_expression">  What is a function expression? </h2>
+ <h2 style="color:green; text-align:center;" id="what_is_a_function_expression">  What is a function expression? </h2>
 
 A **function expression** is a function that is **assigned to a variable**, rather than declared with a name.
 
@@ -1884,9 +1884,9 @@ setTimeout(function () {
 - It can be anonymous or named.
 - Commonly used in callbacks.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_the_this_keyword">  What is the `this` keyword? </h2>
+ <h2 style="color:green; text-align:center;" id="what_is_the_this_keyword">  What is the `this` keyword? </h2>
 
 `this` is a special keyword in JavaScript that refers to the **current execution context** — meaning **the object that is calling the function**.
 
@@ -1985,9 +1985,9 @@ obj.show();
 
 If you want, I can give real interview trick questions about `this`.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_closure">What is a closure?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_closure">What is a closure?</h2>
 
 
 ![Closure](https://miro.medium.com/v2/resize:fit:720/format:webp/1*Vjq0Zot-JSJtc4VgWRRdSQ.png)
@@ -2059,9 +2059,9 @@ c(); // 3
 - Lets a function remember variables from its parent scope.
 - Useful for private data and state management.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_lexical_scope">What is lexical scope?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_lexical_scope">What is lexical scope?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/1b1bc4bf-dd46-4bb1-88a6-5c8ca3265ab9" />
 
@@ -2130,9 +2130,9 @@ function outer() {
 - Lexical scope enables **closures**.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_an_iife">What is an IIFE?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_an_iife">What is an IIFE?</h2>
 
 ![IIFE](https://media.licdn.com/dms/image/v2/D4E22AQGGQAKmr7TMLg/feedshare-shrink_800/B4EZjkq0D.IMAg-/0/1756183086896?e=2147483647&v=beta&t=x4PrVtKEYhpoilpkAolizx8tvaXFbpy3qJkawNA3xuo)
 
@@ -2197,9 +2197,9 @@ console.log(secret); // ❌ Error
 - Prevents global scope pollution.
 - Often used for initialization code.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_recursion">What is recursion?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_recursion">What is recursion?</h2>
 
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/432bf4c4-060a-49df-9079-08214d4dccb9" />
@@ -2229,9 +2229,9 @@ function countdown(n) {
 
 Recursion is when a function solves a problem by breaking it into smaller versions of itself until it reaches a stopping point.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_callbacks">What are callbacks function?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_callbacks">What are callbacks function?</h2>
 
 A **callback** is a **function passed as an argument to another function**, and it runs **after an asynchronous task completes**.
 
@@ -2280,9 +2280,9 @@ setTimeout(function () {
 
 Want the next one?
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_highe_order_functions">What are higher-order functions?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_highe_order_functions">What are higher-order functions?</h2>
 
 ![higher order function](https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2tm40tfx3omj70859053.png)
 
@@ -2339,9 +2339,9 @@ console.log(double(5)); // 10
 
 A higher-order function is any function that **accepts a function**, **returns a function**, or **does both**.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_currying">What is currying?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_currying">What is currying?</h2>
 
 <img alt="Image" src="https://github.com/user-attachments/assets/f4e5f26d-c0b2-4ab7-89db-f5fff027ac08" />
 
@@ -2404,9 +2404,9 @@ console.log(double(10)); // 20
 
 Currying breaks a multi-argument function into a chain of single-argument functions, allowing more reusable and flexible functional code.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_memoization">What is memoization?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_memoization">What is memoization?</h2>
 
 ![Image](https://github.com/user-attachments/assets/f277bf84-bc32-4ef9-80d7-1ec67be95e99)
 
@@ -2468,9 +2468,9 @@ console.log(square(5)); // 25 (from cache, fast!)
 
 Memoization improves performance by **storing previous results** and returning them immediately when the same inputs appear again.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_the_differences_between_call_apply_and_bind">What are the differences between `call()`, `apply()`, and `bind()`?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_the_differences_between_call_apply_and_bind">What are the differences between `call()`, `apply()`, and `bind()`?</h2>
 
 All three are used to **set the value of `this`** in a function, but they differ in **how arguments are passed** and **when the function runs**.
 
@@ -2550,9 +2550,9 @@ newGreet("World"); // runs later
 | **bind()**  | ✘ No               | Individual args  | ✔ Yes                 |
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_debouncing">What is debouncing?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_debouncing">What is debouncing?</h2>
 
 <!-- <img  alt="Image" src="https://github.com/user-attachments/assets/44d237db-5862-482c-9e3a-2edd143de260" /> -->
 
@@ -2604,9 +2604,9 @@ const search = debounce(() => {
 }, 500);
 ```
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_throttling">What is throttling?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_throttling">What is throttling?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/132420aa-82c8-46fb-85af-01db03355d08" />
 
@@ -2663,9 +2663,9 @@ window.addEventListener(
 
 Even if user scrolls 100 times, your message prints **only once in 500ms**.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h2>
+<h2 style="color:green; text-align:center;" id="what_are_microtasks_and_macrotasks">What are microtasks and macrotasks?</h2>
 
 ![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
 
@@ -2752,18 +2752,18 @@ Even with `0 ms`, `setTimeout` waits because **microtasks always have priority**
 
 | Feature   | Microtask Queue                | Macrotask Queue               |
 | --------- | ------------------------------ | ----------------------------- |
-| Priority  | ⭐ Higher                      | Lower                         |
+| Priority  | ⭐ Higher                       | Lower                         |
 | Examples  | Promises, queueMicrotask       | setTimeout, events, intervals |
 | Execution | Runs _after_ call stack clears | Runs after microtasks         |
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
 <h1 style="text-align:center;" >Objects, Arrays, and Prototype</h1>
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
+<h2 style="color:green; text-align:center;" id="how_can_you_create_objects_in_javascript" >How can you create objects in JavaScript? </h2>
 
 JavaScript gives you **several ways** to create objects.
 Here are the **main methods** 👇
@@ -2889,9 +2889,9 @@ p1.greet(); // Hi, I'm John
 >
 > All methods create objects — they just differ in **how they define structure and inheritance**.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference_between_dot_notation_and_bracket_notation" >Difference between dot notation and bracket notation? </h2>
+<h2 style="color:green; text-align:center;" id="difference_between_dot_notation_and_bracket_notation" >Difference between dot notation and bracket notation? </h2>
 
 JavaScript provides **two ways** to access object properties:
 
@@ -2963,14 +2963,14 @@ console.log(obj["first name"]); // valid
 | Feature                    | Dot Notation | Bracket Notation   |
 | -------------------------- | ------------ | ------------------ |
 | Easy to read               | ✔ Yes        | ✔ Yes (but longer) |
-| Dynamic keys               | ❌ No        | ✔ Yes              |
-| Keys with spaces           | ❌ No        | ✔ Yes              |
-| Keys starting with numbers | ❌ No        | ✔ Yes              |
-| Requires a string          | ❌ No        | ✔ Yes              |
+| Dynamic keys               | ❌ No         | ✔ Yes              |
+| Keys with spaces           | ❌ No         | ✔ Yes              |
+| Keys starting with numbers | ❌ No         | ✔ Yes              |
+| Requires a string          | ❌ No         | ✔ Yes              |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_prototypal_inheritance" >What is prototypal inheritance? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_prototypal_inheritance" >What is prototypal inheritance? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/36d69dfd-eb45-4109-aa36-0bbab624fd0b" />
 
@@ -3035,9 +3035,9 @@ JavaScript walks upward until it finds the property or reaches `null`.
 Prototypal inheritance allows objects to inherit properties from other objects through a prototype chain, making JavaScript flexible and efficient.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_prototype_chain" >What is the prototype chain? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_prototype_chain" >What is the prototype chain? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/7dce80f9-5fd5-46f1-b065-b44e53cc5240" />
 
@@ -3123,9 +3123,9 @@ The prototype chain is the path JavaScript follows to find properties by checkin
 
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_constructor_function" >What is a constructor function? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_constructor_function" >What is a constructor function? </h2>
 
 A **constructor function** is a special kind of function used to create **multiple objects with the same structure and behavior**.
 
@@ -3185,9 +3185,9 @@ Using `prototype` ensures all objects share the same method (memory efficient).
 
 A constructor function is a blueprint used with the `new` keyword to create multiple similar objects, with shared behavior via `prototype`.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_es6_classes" >What are ES6 classes? </h2>
+<h2 style="color:green; text-align:center;" id="what_are_es6_classes" >What are ES6 classes? </h2>
 
 **ES6 classes** are a modern, cleaner syntax introduced in ES6 (2015) for creating objects and handling inheritance in JavaScript.
 
@@ -3262,9 +3262,9 @@ Used to call the parent class constructor.
 ES6 classes are a modern, readable syntax for creating objects and handling inheritance in JavaScript. They still use prototypes internally but make object-oriented programming much easier.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_object_create" >What is `Object.create()`? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_object_create" >What is `Object.create()`? </h2>
 
 `Object.create()` is a method used to **create a new object** and **directly set its prototype**.
 
@@ -3342,9 +3342,9 @@ child → parent → Object.prototype → null
 
 `Object.create()` creates a new object with the prototype you specify, making it a simple and powerful tool for prototypal inheritance.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference_between_object_freeze_and_object_seal" >Difference between `Object.freeze()` and `Object.seal()`? </h2>
+<h2 style="color:green; text-align:center;" id="difference_between_object_freeze_and_object_seal" >Difference between `Object.freeze()` and `Object.seal()`? </h2>
 
 Both are used to **restrict changes** to an object, but the level of restriction is different.
 
@@ -3405,11 +3405,11 @@ console.log(obj); // { a: 100 }
 
 ### ⭐ Summary Table
 
-| Feature               | `Object.freeze()` | `Object.seal()`        |
-| --------------------- | ----------------- | ---------------------- |
-| Add properties        | ❌ No             | ❌ No                  |
-| Delete properties     | ❌ No             | ❌ No                  |
-| Modify values         | ❌ No             | ✔ Yes                  |
+| Feature               | `Object.freeze()` | `Object.seal()`       |
+| --------------------- | ----------------- | --------------------- |
+| Add properties        | ❌ No              | ❌ No                  |
+| Delete properties     | ❌ No              | ❌ No                  |
+| Modify values         | ❌ No              | ✔ Yes                 |
 | Make object immutable | ✔ Fully immutable | ❌ Partially immutable |
 
 ---
@@ -3419,9 +3419,9 @@ console.log(obj); // { a: 100 }
 - `freeze()` → **No add, no delete, no changes**
 - `seal()` → **No add, no delete, BUT can change values**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_shallow_and_deep_copy" >What is the difference between shallow and deep copy? </h2>
 
 ![Image](https://github.com/user-attachments/assets/8afd2988-4829-4092-8f1b-c97a462a7077)
 
@@ -3474,9 +3474,9 @@ console.log(original.b.c); // 2 🎉 (not affected)
 | Feature                                 | Shallow Copy | Deep Copy |
 | --------------------------------------- | ------------ | --------- |
 | Copies top-level values                 | ✔ Yes        | ✔ Yes     |
-| Copies nested objects independently     | ❌ No        | ✔ Yes     |
-| Nested objects share references         | ✔ Yes        | ❌ No     |
-| Changing nested values affects original | ✔ Yes        | ❌ No     |
+| Copies nested objects independently     | ❌ No         | ✔ Yes     |
+| Nested objects share references         | ✔ Yes        | ❌ No      |
+| Changing nested values affects original | ✔ Yes        | ❌ No      |
 
 ---
 
@@ -3494,9 +3494,9 @@ console.log(original.b.c); // 2 🎉 (not affected)
 - Manual recursive copy function
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="how_do_you_clone_an_object" >How do you clone an object? </h2>
+<h2 style="color:green; text-align:center;" id="how_do_you_clone_an_object" >How do you clone an object? </h2>
 
 Cloning an object means creating a **copy** of it.
 There are **two types** of cloning:
@@ -3574,17 +3574,17 @@ function deepClone(obj) {
 
 | Method                         | Type    | Supports nested? | Notes              |
 | ------------------------------ | ------- | ---------------- | ------------------ |
-| `{ ...obj }`                   | Shallow | ❌               | Fast, common       |
-| `Object.assign()`              | Shallow | ❌               | Same as spread     |
+| `{ ...obj }`                   | Shallow | ❌                | Fast, common       |
+| `Object.assign()`              | Shallow | ❌                | Same as spread     |
 | `structuredClone()`            | Deep    | ✔                | Best modern method |
 | `JSON.parse(JSON.stringify())` | Deep    | ✔                | Limited data types |
 | `Recursive function`           | Deep    | ✔                | Custom control     |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_spread_and_rest_operators_in_javascript" >What are Spread and Rest Operators in JavaScript? </h2>
+<h2 style="color:green; text-align:center;" id="what_are_spread_and_rest_operators_in_javascript" >What are Spread and Rest Operators in JavaScript? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/429a865f-d9d3-49ca-8669-1c6d77511ff2" />
 
@@ -3660,15 +3660,16 @@ console.log(rest); // [20, 30, 40]
 ### 🎯 **In short:**
 
 > **Spread (`...`)** expands values out of arrays/objects.
+
 > **Rest (`...`)** gathers multiple values into an array.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference_between_slice_and_splice" >Difference between `slice()` and `splice()`? </h2>
+<h2 style="color:green; text-align:center;" id="difference_between_slice_and_splice" >Difference between `slice()` and `splice()`? </h2>
 
 | Feature                  | `slice()`                            | `splice()`                            |
 | ------------------------ | ------------------------------------ | ------------------------------------- |
-| Modifies original array? | ❌ No                                | ✔ Yes                                 |
+| Modifies original array? | ❌ No                                 | ✔ Yes                                 |
 | Returns what?            | A **new array**                      | The **removed elements**              |
 | Purpose                  | To **copy/extract** part of an array | To **add or remove** elements         |
 | Arguments                | `(start, end)`                       | `(start, deleteCount, ...itemsToAdd)` |
@@ -3722,9 +3723,9 @@ console.log(arr); // [1, 2, 3, 4]
 - **splice = surgery** → modifies the array
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference_between_map_foreach_filter_and_reduce"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
+<h2 style="color:green; text-align:center;" id="difference_between_map_foreach_filter_and_reduce"> What is the difference between `map()`, `forEach()`, `filter()`, and `reduce()`?</h2>
 
 ![Screenshot 1](javascript_learning/imges/js-map.jpg)
 
@@ -3827,23 +3828,23 @@ console.log(total);
 
 | Method        | Returns New Array? | Purpose                | Example Result   |
 | ------------- | ------------------ | ---------------------- | ---------------- |
-| **forEach()** | ❌ No              | Loop through items     | Just prints/logs |
-| **map()**     | ✅ Yes             | Transform each item    | `[2,4,6]`        |
-| **filter()**  | ✅ Yes             | Select some items      | `[2,4]`          |
-| **reduce()**  | ❌ (any value)     | Combine into one value | `10`             |
+| **forEach()** | ❌ No               | Loop through items     | Just prints/logs |
+| **map()**     | ✅ Yes              | Transform each item    | `[2,4,6]`        |
+| **filter()**  | ✅ Yes              | Select some items      | `[2,4]`          |
+| **reduce()**  | ❌ (any value)      | Combine into one value | `10`             |
 
 ---
 
 ### 🎯 **Simple Summary:**
 
-> - `forEach()` → just loop
-> - `map()` → transform values
-> - `filter()` → keep what you need
-> - `reduce()` → make one final result
+ - `forEach()` → just loop
+ - `map()` → transform values
+ - `filter()` → keep what you need
+ - `reduce()` → make one final result
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="how_do_you_remove_duplicates_from_an_array" >How do you remove duplicates from an array? </h2>
+<h2 style="color:green; text-align:center;" id="how_do_you_remove_duplicates_from_an_array" >How do you remove duplicates from an array? </h2>
 
 There are several common ways.
 The **most modern and simplest** is using a **Set**.
@@ -3918,9 +3919,9 @@ console.log(result);
 | `reduce()`   | Functional style | Good for interviews |
 | `Map/Object` | Large datasets   | Very fast           |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="how_do_you_sort_an_array_of_objects"> How do you sort an array of objects? </h2>
+<h2 style="color:green; text-align:center;" id="how_do_you_sort_an_array_of_objects"> How do you sort an array of objects? </h2>
 
 You sort an array of objects using **`Array.prototype.sort()`** with a **custom compare function**.
 
@@ -3993,9 +3994,9 @@ users.sort((a, b) => {
 - Strings → `a.prop.localeCompare(b.prop)`
 - Multiple fields → check one, then fallback to another.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_array_flattening">  ✅ What is array flattening? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_array_flattening">  ✅ What is array flattening? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/e8abffe7-c467-432a-9751-08eb8ef8455b" />
 
@@ -4067,11 +4068,11 @@ JSON.parse("[" + arr.toString() + "]");
 - **Best method**: `arr.flat(Infinity)`
 - Can also be done using recursion or `reduce()`.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 <h1 style="text-align:center;" > DOM & Browser</h1>
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_dom">  What is the DOM? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_dom">  What is the DOM? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2bb73038-6391-43a8-a7cd-de5a72dc3876" />
 
@@ -4201,9 +4202,9 @@ If you want, I can also show:
 ✔ DOM tree including whitespace text nodes
 ✔ How browsers internally store node types
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_difference_between_innertext_textcontent_and_innerhtml">  What is the difference between `innerText`, `textContent`, and `innerHTML`? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_difference_between_innertext_textcontent_and_innerhtml">  What is the difference between `innerText`, `textContent`, and `innerHTML`? </h2>
 
 These three properties all deal with **reading or changing content** inside an element, but they behave very differently.
 
@@ -4287,9 +4288,9 @@ Hello   ← bold text
 
 | Property        | Returns      | Respects CSS? | Shows hidden text? | Accepts HTML? |
 | --------------- | ------------ | ------------- | ------------------ | ------------- |
-| **textContent** | Raw text     | ❌ No         | ✔ Yes              | ❌ No         |
-| **innerText**   | Visible text | ✔ Yes         | ❌ No              | ❌ No         |
-| **innerHTML**   | HTML markup  | ❌ No         | ✔ Yes              | ✔ Yes         |
+| **textContent** | Raw text     | ❌ No          | ✔ Yes              | ❌ No          |
+| **innerText**   | Visible text | ✔ Yes         | ❌ No               | ❌ No          |
+| **innerHTML**   | HTML markup  | ❌ No          | ✔ Yes              | ✔ Yes         |
 
 ---
 
@@ -4299,9 +4300,9 @@ Hello   ← bold text
 - **innerText → visible text**
 - **innerHTML → HTML text + tags**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="how_do_you_select_dom_elements">  How do you select DOM elements? </h2>elements?
+<h2 style="color:green; text-align:center;" id="how_do_you_select_dom_elements">  How do you select DOM elements? </h2>elements?
 
 JavaScript provides multiple methods to select elements from the DOM.
 They can be grouped into **modern** and **traditional** methods.
@@ -4384,12 +4385,12 @@ document.getElementsByName("email");
 
 | Method                     | Returns                | CSS Selector Support | Live? |
 | -------------------------- | ---------------------- | -------------------- | ----- |
-| `querySelector()`          | First match            | ✔ Yes                | ❌ No |
-| `querySelectorAll()`       | All matches (NodeList) | ✔ Yes                | ❌ No |
-| `getElementById()`         | Single element         | ❌ No                | ❌ No |
-| `getElementsByClassName()` | Collection             | ❌ No                | ✔ Yes |
-| `getElementsByTagName()`   | Collection             | ❌ No                | ✔ Yes |
-| `getElementsByName()`      | Collection             | ❌ No                | ✔ Yes |
+| `querySelector()`          | First match            | ✔ Yes                | ❌ No  |
+| `querySelectorAll()`       | All matches (NodeList) | ✔ Yes                | ❌ No  |
+| `getElementById()`         | Single element         | ❌ No                 | ❌ No  |
+| `getElementsByClassName()` | Collection             | ❌ No                 | ✔ Yes |
+| `getElementsByTagName()`   | Collection             | ❌ No                 | ✔ Yes |
+| `getElementsByName()`      | Collection             | ❌ No                 | ✔ Yes |
 
 **Live?**
 
@@ -4405,9 +4406,9 @@ Use **querySelector** and **querySelectorAll** for almost everything.
 Use `getElementById` only when you know the element has a unique ID.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="how_do_you_create_dom_elements_dynamically">  How do you create DOM elements dynamically? </h2>elements dynamically?
+ <h2 style="color:green; text-align:center;" id="how_do_you_create_dom_elements_dynamically">  How do you create DOM elements dynamically? </h2>elements dynamically?
 
 You can create DOM elements using JavaScript with three main steps:
 
@@ -4523,9 +4524,9 @@ If you want, I can show:
 ✔ dynamic elements using loops
 ✔ jQuery version (`$('<div>')`)
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_event_propagation_and_event_delegation">what is event propagation and event delegation?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_event_propagation_and_event_delegation">what is event propagation and event delegation?</h2>
 
 ![Image](https://github.com/user-attachments/assets/9b30f497-5c4c-465c-8c87-e659faedb713)
 
@@ -4711,9 +4712,9 @@ Only **one listener** handles **all list items**.
 
 **Event delegation** uses bubbling: a parent handles events for children using `event.target`.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-  <h2 style="color:green" id="what_is_event_bubbling">  What is event bubbling? </h2>
+  <h2 style="color:green; text-align:center;" id="what_is_event_bubbling">  What is event bubbling? </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/9d46063c-92cb-4fd8-96a9-bcb2fcf9535e" />
 
@@ -4778,9 +4779,9 @@ event.stopPropagation();
 
 > Event bubbling = **bubble goes UP**.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_event_capturing">  What is event capturing? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_event_capturing">  What is event capturing? </h2>
 
 
 **Event capturing** is the opposite of bubbling.
@@ -4810,9 +4811,9 @@ element.addEventListener("click", handler, true);
 
 This runs the event handler **during capturing**, not bubbling.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_event_delegation">  What is event delegation? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_event_delegation">  What is event delegation? </h2>
 
 **Event delegation is a technique where you add ONE event listener to a parent element instead of adding separate listeners to many child elements.**
 
@@ -4872,9 +4873,9 @@ document.querySelector("ul").addEventListener("click", function (e) {
 
 **Event delegation means placing one event listener on a parent element so it can handle events from all its children using event bubbling.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_preventdefault">  What is `preventDefault()`? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_preventdefault">  What is `preventDefault()`? </h2>
 
 ### ✅ **Super Simple Explanation of `preventDefault()`**
 
@@ -4915,9 +4916,9 @@ form.addEventListener("submit", function (e) {
 **`preventDefault()` tells the browser: “Don’t do what you normally do for this event.”**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_stoppropagation">  What is `stopPropagation()`? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_stoppropagation">  What is `stopPropagation()`? </h2>
 
 **`stopPropagation()` stops an event from moving to parent elements.**
 
@@ -4963,9 +4964,9 @@ button.addEventListener("click", function (e) {
 
 **`stopPropagation()` stops the event from going to parent elements.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_the_difference_between_target_and_currenttarget">  What is the difference between `target` and `currentTarget`? </h2>
+ <h2 style="color:green; text-align:center;" id="what_is_the_difference_between_target_and_currenttarget">  What is the difference between `target` and `currentTarget`? </h2>
 
 ### 🔹 **`target`**
 
@@ -5003,9 +5004,9 @@ document.getElementById("box").addEventListener("click", function (e) {
 **`target` = where the event started**
 **`currentTarget` = who is listening for the event**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_a_dom_event_listener">  What is a DOM event listener? </h2>
+ <h2 style="color:green; text-align:center;" id="what_is_a_dom_event_listener">  What is a DOM event listener? </h2>
 
 **A DOM event listener is a function that runs when something happens on a webpage — like a click, key press, or mouse movement.**
 
@@ -5034,9 +5035,9 @@ button.addEventListener("click", function () {
 
 **A DOM event listener waits for an event and runs a function when that event occurs.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>
+<h2 style="color:green; text-align:center;" id="what_are_shadow_dom_and_virtual_dom"> What are shadow DOM and virtual DOM? </h2>
 
 It keeps styles and elements **separate** from the rest of the page so they don’t conflict.
 
@@ -5071,9 +5072,9 @@ Instead of changing the real DOM directly, React updates the virtual version fir
 | Used by      | Web Components              | React, Vue (concept)        |
 | Affects CSS? | Yes (isolates styles)       | No                          |
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_dataset_in_html">  What is `dataset` in HTML </h2>?
+ <h2 style="color:green; text-align:center;" id="what_is_dataset_in_html">  What is `dataset` in HTML </h2>?
 
 `dataset` is an object that lets you access **data attributes** (custom attributes) in HTML.
 
@@ -5116,13 +5117,13 @@ btn.dataset.user = "mike";
 
 **`dataset` gives you easy access to HTML attributes that start with `data-`.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
 <h1 style="text-align:center;" >Asynchronous JavaScript</h1>
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_ajax"> What is AJAX?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_ajax"> What is AJAX?</h2>
 
 ### What is AJAX?\*\*
 
@@ -5160,9 +5161,9 @@ $.ajax({
 echo "Hello, this data came from the server without reloading!";
 ```
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_asynchronous_programming"> What is asynchronous programming?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_asynchronous_programming"> What is asynchronous programming?</h2>
 
 **Asynchronous programming** is a way of writing code where tasks can run **in the background** without stopping or blocking the main program.
 
@@ -5213,9 +5214,9 @@ Because `setTimeout` runs asynchronously — it doesn’t block the code.
 
 **Asynchronous programming allows a program to handle long tasks without stopping the whole application.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_a_promise"> What is a Promise?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_a_promise"> What is a Promise?</h2>
 
 A **Promise** in JavaScript is an object that represents the **future result** of an asynchronous operation.
 It acts like a placeholder for a value that you will get **later** (success or failure).
@@ -5258,9 +5259,9 @@ myPromise
 
 **A Promise is a JavaScript object that handles asynchronous operations and returns a result in the future.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_async_await"> What is async/await?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_async_await"> What is async/await?</h2>
 
 **async/await** is a modern JavaScript syntax used to handle asynchronous operations in a way that looks and reads like normal, synchronous code.
 
@@ -5309,9 +5310,9 @@ getData();
 
 **async/await is a cleaner way to work with Promises, allowing asynchronous code to look synchronous.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_callback_hell_how_do_you_avoid_callback_hell"> What is callback hell. How do you avoid callback hell?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_callback_hell_how_do_you_avoid_callback_hell"> What is callback hell. How do you avoid callback hell?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/acce4d8c-2cba-4f4c-9c58-c232f878e60f" />
 
@@ -5391,9 +5392,9 @@ Break code into small functions instead of nesting.
 
 **Callback Hell is deeply nested callbacks that make code hard to read and maintain. We avoid it using Promises, async/await, and modular code structure.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_the_fetch_api"> What is the fetch API?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_the_fetch_api"> What is the fetch API?</h2>
 
 The **Fetch API** is a modern JavaScript interface used to make **HTTP requests** (like GET, POST) from the browser.
 It is used to fetch data from servers **asynchronously** and returns a **Promise**.
@@ -5445,9 +5446,9 @@ fetch("https://example.com/api", {
 
 **The Fetch API is a modern JavaScript method for making HTTP requests and handling responses using Promises.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_event_loop">What is the event loop?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_event_loop">What is the event loop?</h2>
 
 
 ![Image](https://github.com/user-attachments/assets/8ffcfb6a-fcb8-48d8-9c14-3baf8b3ae8b5)
@@ -5541,9 +5542,9 @@ The event loop:
 
 Ready for the next one!
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_call_stack">What is the call stack?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_call_stack">What is the call stack?</h2>
 
 ![Image](https://github.com/user-attachments/assets/7ff68356-15c8-4abc-bf4d-b08069a44a7f)
 
@@ -5617,9 +5618,9 @@ After finishing:
 
 The call stack is the part of the JavaScript engine that tracks function execution in a last-in-first-out order.
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_are_settimeout_and_setinterval"> What are setTimeout and setInterval?</h2>
+ <h2 style="color:green; text-align:center;" id="what_are_settimeout_and_setinterval"> What are setTimeout and setInterval?</h2>
 
 ### **1. `setTimeout()`**
 
@@ -5678,9 +5679,9 @@ setTimeout(() => {
 
 **`setTimeout` runs code once after a delay; `setInterval` runs code repeatedly at fixed intervals.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_a_web_worker"> What is a Web Worker?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_a_web_worker"> What is a Web Worker?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/2e99d044-bf5a-4597-b503-02533540c183" />
 
@@ -5731,9 +5732,9 @@ onmessage = function (event) {
 
 **A Web Worker allows JavaScript to run background threads so heavy tasks don't block the main UI.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_service_worker"> What is a Service Worker?</h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_service_worker"> What is a Service Worker?</h2>
 
 ![Image](https://github.com/user-attachments/assets/1f372e1e-2f9a-4390-9691-c27bcf7d64ff)
 
@@ -5784,9 +5785,9 @@ self.addEventListener("install", (event) => {
 
 **A Service Worker is a background script that provides offline support, caching, and push notifications by intercepting network requests.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_is_cors"> What is CORS?</h2>
+ <h2 style="color:green; text-align:center;" id="what_is_cors"> What is CORS?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/37d33742-d8ad-433c-be95-c22135ccb9a3" />
 
@@ -5847,9 +5848,9 @@ Otherwise → the browser will block the request.
 
 **CORS is a browser security system that controls which external websites are allowed to access your server’s resources.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="same_origin_policy">What is SOP (Same Origin Policy)?</h2>
+<h2 style="color:green; text-align:center;" id="same_origin_policy">What is SOP (Same Origin Policy)?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/e484c0d6-3645-4b18-bedb-99945533d543" />
 
@@ -5905,9 +5906,9 @@ So the browser says:
 SOP protects users from attacks like **XSS**, **CSRF**, and unauthorized data access.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
- <h2 style="color:green" id="what_are_sse"> What are SSE (Server-Sent Events)?</h2>
+ <h2 style="color:green; text-align:center;" id="what_are_sse"> What are SSE (Server-Sent Events)?</h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/95bfbe3a-c777-4be6-8b55-945869399653" />
 
@@ -5983,9 +5984,9 @@ eventSource.onmessage = function (event) {
 
 **SSE (Server-Sent Events) allow the server to push real-time updates to the client using a simple one-way HTTP connection.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_long_polling"> What is Long Polling ? </h2>
+<h2 style="color:green; text-align:center;" id="what_is_long_polling"> What is Long Polling ? </h2>
 
 **Long polling** is a technique where the client sends a request to the server and **keeps the connection open** until the server has new data to send.
 
@@ -6046,11 +6047,11 @@ longPoll();
 **Long polling is a technique where the client keeps a request open until the server has new data, then immediately reconnects for near real-time updates.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 <h1 style="text-align:center;" >ES6+ Features</h1> 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_template_literals">  What are template literals?  </h2>
+<h2 style="color:green; text-align:center;" id="what_are_template_literals">  What are template literals?  </h2>
 
 ![Template literal](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*OwdFaZ6A77pHTmwUpFKi0A.png)
 
@@ -6106,9 +6107,9 @@ console.log(`Total: ${a + b}`);
 
 **Template literals are strings written using backticks that allow variable interpolation, multiline strings, and embedded expressions using `${ }`.**
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_set">  What is a `Set`?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_set">  What is a `Set`?  </h2>
 
 
 A **Set** in JavaScript is a built-in object that stores **unique values**.
@@ -6182,9 +6183,9 @@ for (const value of set) {
 **A Set is a JavaScript object that stores unique values and automatically removes duplicates, providing fast lookups and clean data collection.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_map">  What is a `Map`?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_map">  What is a `Map`?  </h2>
 
 
 A **Map** in JavaScript is a collection of **key-value pairs** where:
@@ -6261,9 +6262,9 @@ for (const [key, value] of map) {
 **A Map is a key-value data structure in JavaScript where keys can be any type, and it preserves insertion order with efficient retrieval.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_weakmap">  What is a WeakMap?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_weakmap">  What is a WeakMap?  </h2>
 
 A **WeakMap** is a special kind of Map where:
 
@@ -6311,9 +6312,9 @@ user = null;
 **A WeakMap is a Map that only accepts object keys and automatically garbage-collects unused key objects, preventing memory leaks.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_a_weakset">  What is a WeakSet?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_a_weakset">  What is a WeakSet?  </h2>
 
 A **WeakSet** is similar to a Set, but with two key differences:
 
@@ -6361,9 +6362,9 @@ obj1 = null; // remove reference
 **A WeakSet is a Set that stores only objects and automatically removes them when they are no longer referenced elsewhere, helping prevent memory leaks.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_are_modules_in_javascript">  What are modules in JavaScript?  </h2>
+<h2 style="color:green; text-align:center;" id="what_are_modules_in_javascript">  What are modules in JavaScript?  </h2>
 
 
 <img alt="Image" src="https://github.com/user-attachments/assets/e0054f34-38ad-4338-aaa4-ed76f6cb77c9" />
@@ -6451,9 +6452,9 @@ console.log(multiply(2, 3)); // 6
 **Modules in JavaScript are files that export and import code so it can be reused, organized, and kept separate from the global scope.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="difference_between_named_and_default_exports">  Difference between named and default exports?  </h2>
+<h2 style="color:green; text-align:center;" id="difference_between_named_and_default_exports">  Difference between named and default exports?  </h2>
 
 JavaScript modules allow you to export code in **two ways**:
 
@@ -6529,9 +6530,9 @@ import m from './utils.js'; // "m" can be any name
 **Named exports allow exporting multiple specific items, while default exports allow exporting a single main value that can be imported with any name.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_dynamic_import">  What is dynamic import?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_dynamic_import">  What is dynamic import?  </h2>
 
 ![Image](https://github.com/user-attachments/assets/413aff84-236d-4eba-bc86-b8ccb15b57f2)
 
@@ -6596,9 +6597,9 @@ if (user.isAdmin) {
 
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_the_temporal_dead_zone">  What is the temporal dead zone?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_the_temporal_dead_zone">  What is the temporal dead zone?  </h2>
 
 
 ![Image](https://github.com/user-attachments/assets/c8829c18-d8f9-4198-9316-90491d4d16ad)
@@ -6665,9 +6666,9 @@ It ensures you **don’t use a variable before its initialization**, even though
 **The Temporal Dead Zone is the phase where `let` and `const` variables are hoisted but not initialized, causing a ReferenceError if accessed before their declaration.**
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_nullish_coalescing">  What is nullish coalescing?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_nullish_coalescing">  What is nullish coalescing?  </h2>
 
 <img  alt="Image" src="https://github.com/user-attachments/assets/80257e74-172b-499e-a058-3c661a965127" />
 
@@ -6715,9 +6716,9 @@ console.log(result); // "default value"
 It’s safer than `||` when values like `0`, `false`, or `""` are valid and should not trigger fallback values.
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
 
-<h2 style="color:green" id="what_is_optional_chaining">  What is optional chaining?  </h2>
+<h2 style="color:green; text-align:center;" id="what_is_optional_chaining">  What is optional chaining?  </h2>
 
 ### ⭐ **What is Optional Chaining (`?.`)?**
 
@@ -6783,4 +6784,4 @@ console.log(data?.[0]);
 
 
 
-<span style="color:green;">================================================================ </span>
+<hr style="border: 2px solid green;">
