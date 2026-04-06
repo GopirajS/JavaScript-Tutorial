@@ -2475,79 +2475,110 @@ Memoization improves performance by **storing previous results** and returning t
 All three are used to **set the value of `this`** in a function, but they differ in **how arguments are passed** and **when the function runs**.
 
 ---
+Here’s a **simple + clear explanation** of `call()`, `apply()`, and `bind()` with easy examples 👇
 
-### ✅ **1. `call()`**
+---
 
-### **Calls the function immediately**
+# ✅ 1. `call()`
 
-Arguments are passed **individually**.
+👉 Calls the function **immediately**
+👉 Pass arguments **one by one**
 
-**Syntax:**
+### Example:
 
-```js
-func.call(thisArg, arg1, arg2, ...)
-```
-
-**Example:**
-
-```js
-function greet(a, b) {
-  console.log(this.name, a, b);
+```javascript
+function greet(city, country) {
+    console.log(this.name + " from " + city + ", " + country);
 }
 
-greet.call({ name: "John" }, "Hello", "World");
+const user = { name: "Gopi" };
+
+greet.call(user, "Chennai", "India");
+```
+
+### Output:
+
+```
+Gopi from Chennai, India
 ```
 
 ---
 
-### ✅ **2. `apply()`**
+# ✅ 2. `apply()`
 
-### **Calls the function immediately**
+👉 Calls the function **immediately**
+👉 Pass arguments as an **array**
 
-Arguments are passed **as an array**.
+### Example:
 
-**Syntax:**
+```javascript
+function greet(city, country) {
+    console.log(this.name + " from " + city + ", " + country);
+}
 
-```js
-func.apply(thisArg, [arg1, arg2, ...])
+const user = { name: "Gopi" };
+
+greet.apply(user, ["Chennai", "India"]);
 ```
 
-**Example:**
+### Output:
 
-```js
-greet.apply({ name: "John" }, ["Hello", "World"]);
 ```
-
----
-
-### ✅ **3. `bind()`**
-
-### **Does NOT call the function immediately**
-
-It returns a **new function** with `this` permanently set.
-
-**Syntax:**
-
-```js
-const newFunc = func.bind(thisArg, arg1, arg2, ...)
-```
-
-**Example:**
-
-```js
-const newGreet = greet.bind({ name: "John" }, "Hello");
-newGreet("World"); // runs later
+Gopi from Chennai, India
 ```
 
 ---
 
-### ⭐ Summary Table
+# ✅ 3. `bind()`
 
-| Method      | Calls Immediately? | Arguments Format | Returns New Function? |
-| ----------- | ------------------ | ---------------- | --------------------- |
-| **call()**  | ✔ Yes              | Individual args  | ✘ No                  |
-| **apply()** | ✔ Yes              | Array of args    | ✘ No                  |
-| **bind()**  | ✘ No               | Individual args  | ✔ Yes                 |
+👉 **Does NOT call immediately**
+👉 Returns a **new function** (you call it later)
+
+### Example:
+
+```javascript
+function greet(city, country) {
+    console.log(this.name + " from " + city + ", " + country);
+}
+
+const user = { name: "Gopi" };
+
+const newFunc = greet.bind(user, "Chennai", "India");
+
+newFunc(); // call later
+```
+
+### Output:
+
+```
+Gopi from Chennai, India
+```
+
+---
+
+# 🎯 Key Differences (Important for Interview)
+
+| Feature      | call()          | apply()   | bind()          |
+| ------------ | --------------- | --------- | --------------- |
+| Execution    | Immediate       | Immediate | Later           |
+| Arguments    | Comma separated | Array     | Comma separated |
+| Return value | Result          | Result    | New function    |
+
+---
+
+# 🧠 Super Simple Memory Trick
+
+* `call()` → **C** = Comma arguments
+* `apply()` → **A** = Array arguments
+* `bind()` → **B** = Build new function
+
+---
+
+# 💡 When to Use
+
+* Use `call()` → when arguments are normal values
+* Use `apply()` → when arguments are in array
+* Use `bind()` → when you want to reuse function later
 
 
 <hr style="border: 2px solid green;">
@@ -3659,9 +3690,8 @@ console.log(rest); // [20, 30, 40]
 
 ### 🎯 **In short:**
 
-> **Spread (`...`)** expands values out of arrays/objects.
-
-> **Rest (`...`)** gathers multiple values into an array.
+  **Spread (`...`)** expands values out of arrays/objects. 
+  **Rest (`...`)** gathers multiple values into an array.
 
 <hr style="border: 2px solid green;">
 
