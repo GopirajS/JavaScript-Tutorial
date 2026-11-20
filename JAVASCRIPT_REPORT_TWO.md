@@ -1506,17 +1506,47 @@ console.log(numbers);
 ```js
 let numbers = [10, 20, 30, 40, 50];
 
-let result = numbers.splice(1, 2);
+console.log("Original Array:", numbers);
 
-console.log(result);
-console.log(numbers);
+
+// 1. REMOVE elements
+// Syntax: splice(startIndex, deleteCount)
+
+let removed = numbers.splice(1, 2);
+
+console.log("Removed Elements:", removed);
+console.log("After Removing:", numbers);
+
+
+// 2. ADD elements
+// Syntax: splice(startIndex, 0, newElements)
+
+numbers.splice(1, 0, 100, 200);
+
+console.log("After Adding:", numbers);
+
+
+// 3. REPLACE elements
+// Syntax: splice(startIndex, deleteCount, newElements)
+
+let replaced = numbers.splice(2, 2, 300, 400);
+
+console.log("Replaced Elements:", replaced);
+console.log("After Replacing:", numbers);
 ```
 
 **Output:**
 
 ```
-[20, 30]
-[10, 40, 50]
+Original Array:  [10, 20, 30, 40, 50]
+
+Removed Elements: [20, 30]
+After Removing:   [10, 40, 50]
+
+After Adding:     [10, 100, 200, 40, 50]
+
+Replaced Elements: [200, 40]
+After Replacing:   [10, 100, 300, 400, 50]
 ```
 
 - `1` = Starting index.
@@ -1532,41 +1562,38 @@ console.log(numbers);
 
 <h2  class="answer-heading" id="6.7">6.7 What is includes()?</h2>
 
-💡 `indexOf()` is used to find the **position (index)** of a value in an array or string.
+### **6.7 What is&#x20;**`includes()`**?**
 
-- If the value exists → returns its index.
-- If the value does not exist → returns `-1`.
-- Index starts from `0`.
+💡 **Meaning:** `includes()` is used to check whether an element exists in an array. It returns `true` or `false`.
 
-**💻 Example:**
+**Example:**
 
 ```js
-let fruits = ["Apple", "Mango", "Banana", "Orange"];
+let fruits = ["Apple", "Banana", "Mango"];
 
-console.log(fruits.indexOf("Mango"));
-console.log(fruits.indexOf("Orange"));
-console.log(fruits.indexOf("Grapes"));
+console.log(fruits.includes("Banana"));
+console.log(fruits.includes("Orange"));
 ```
 
-**📤 Output:**
+**Output:**
 
 ```
-1
-3
--1
+true
+false
 ```
 
-**🔑 Difference between&#x20;**`includes()`**&#x20;and&#x20;**`indexOf()`
+**Understand:**
 
-| Method       | Returns              |
-| ------------ | -------------------- |
-| `includes()` | `true` or `false`    |
-| `indexOf()`  | Index number or `-1` |
+- `"Banana"` exists in the array → `true`.
+- `"Orange"` does not exist → `false`.
 
-**🧠 Remember:**
+**Syntax:**
 
-- `includes()` → Checks whether a value exists.
-- `indexOf()` → Finds the position of a value.
+```js
+array.includes(element);
+```
+
+**Remember:** `includes()` checks whether an element is available in an array.
 
 <h2  class="answer-heading" id="6.8">6.8 What is indexOf()?</h2>
 
@@ -2098,6 +2125,11 @@ console.log(numbers);
 **1.&#x20;**`some()`**&#x20;– At Least One**
 
 ```js
+
+// array.some((element, index, originalArray) => {
+//     return condition;
+// });
+
 let numbers = [10, 20, 30, 40];
 
 let result = numbers.some(num => num > 30);
@@ -2116,6 +2148,11 @@ Explanation: `40` is greater than `30`, so the result is `true`.
 **2.&#x20;**`every()`**&#x20;– All Elements**
 
 ```js
+
+// array.every((currentElement, index, array) => {
+    // return condition;
+// });
+
 let numbers = [10, 20, 30, 40];
 
 let result = numbers.every(num => num > 5);
@@ -5235,40 +5272,6 @@ console.log(result);
 20
 ```
 
-**Understand step by step:**
-
-**Initial value: 5**
-
-**double(5) = 5 × 2 = 10**
-
-**addTen(10) = 10 + 10 = 20**
-
-**Final result: 20**
-
-**Create a reusable compose function:**
-
-```js
-function compose(...functions) {
-  return function(value) {
-    return functions.reduceRight((result, fn) => {
-      return fn(result);
-    }, value);
-  };
-}
-
-const double = number => number * 2;
-const addTen = number => number + 10;
-
-const calculate = compose(addTen, double);
-
-console.log(calculate(5));
-```
-
-**Output:**
-
-```
-20
-```
 
 `reduceRight()` executes the functions from right to left.
 
@@ -6261,7 +6264,7 @@ true
 
 **🧠 Remember:** `Set` is useful when you need to store unique values without duplicates.
 
-<h2  class="answer-heading" id="19.2">19.2 What is a `Map`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.2">19.2 What is a `Map`?</h2>
 
 ### **19.2 What is a&#x20;**`Map`**?**
 
@@ -6305,7 +6308,7 @@ true
 
 **🧠 Remember:** `Map` stores key-value pairs and allows keys of any data type.
 
-<h2  class="answer-heading" id="19.3">19.3 What is the difference between `Map` and `Object`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.3">19.3 What is the difference between `Map` and `Object`?</h2>
 
 ### **19.3 What is the Difference Between&#x20;**`Map`**&#x20;and&#x20;**`Object`**?**
 
@@ -6353,7 +6356,7 @@ Gopi
 
 **🧠 Remember:** Use `Map` for flexible key-value storage and `Object` for structured data.
 
-<h2  class="answer-heading" id="19.4">19.4 What is the difference between `Set` and `Array`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.4">19.4 What is the difference between `Set` and `Array`?</h2>
 
 ### **19.4 What is the Difference Between&#x20;**`Set`**&#x20;and&#x20;**`Array`**?**
 
@@ -6392,7 +6395,7 @@ Set(3) { 10, 20, 30 }
 
 **🧠 Remember:** Array allows duplicates; Set automatically stores unique values.
 
-<h2  class="answer-heading" id="19.5">19.5 What is `WeakMap`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.5">19.5 What is `WeakMap`?</h2>
 
 ### **19.5 What is a&#x20;**`WeakMap`**?**
 
@@ -6434,7 +6437,7 @@ true
 
 **🧠 Remember:** WeakMap stores object-based keys without keeping those objects alive just because they are keys.
 
-<h2  class="answer-heading" id="19.6">19.6 What is `WeakSet`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.6">19.6 What is `WeakSet`?</h2>
 
 ### **19.6 What is a&#x20;**`WeakSet`**?**
 
@@ -6478,7 +6481,7 @@ true
 
 **🧠 Remember:** WeakSet stores unique objects and allows them to be garbage collected when no other references exist.
 
-<h2  class="answer-heading" id="19.7">19.7 What is a `Symbol`?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.7">19.7 What is a `Symbol`?</h2>
 
 ### **19.7 What is a&#x20;**`Symbol`**?**
 
@@ -6524,7 +6527,7 @@ Gopi
 
 **🧠 Remember:** Symbol creates unique identifiers, even when descriptions are the same.
 
-<h2  class="answer-heading" id="19.8">19.8 What is an iterator?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.8">19.8 What is an iterator?</h2>
 
 ### **19.8 What is an Iterator?**
 
@@ -6567,7 +6570,7 @@ console.log(iterator.next());
 
 **🧠 Remember:** An iterator provides values one at a time through `next()`.
 
-<h2  class="answer-heading" id="19.9">19.9 What is an iterable?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.9">19.9 What is an iterable?</h2>
 
 ### **19.9 What is an Iterable?**
 
@@ -6605,7 +6608,7 @@ Orange
 
 **🧠 Remember:** Iterable means an object that can provide an iterator and be looped through.
 
-<h2  class="answer-heading" id="19.10">19.10 What is a generator function?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.10">19.10 What is a generator function?</h2>
 
 ### **19.10 What is a Generator Function?**
 
@@ -6652,7 +6655,7 @@ console.log(result.next());
 
 **🧠 Remember:** Generator functions produce values one at a time and can pause and resume execution.
 
-<h2  class="answer-heading" id="19.11">19.11 What is the `yield` keyword?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.11">19.11 What is the `yield` keyword?</h2>
 
 ### **19.11 What is the&#x20;**`yield`**&#x20;Keyword?**
 
@@ -6704,7 +6707,7 @@ Step 2
 
 **🧠 Remember:** `yield` sends a value and pauses the generator until the next `next()` call.
 
-<h2  class="answer-heading" id="19.12">19.12 What is the difference between an iterator and a generator?2.1 What are Arithmetic Operators in JavaScript?</h2>
+<h2  class="answer-heading" id="19.12">19.12 What is the difference between an iterator and a generator?</h2>
 
 ### **19.12 What is the Difference Between an Iterator and a Generator?**
 
